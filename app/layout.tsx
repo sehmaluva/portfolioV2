@@ -23,7 +23,7 @@ keywords: [
 ],
 authors: [{ name: "Malvin" }],
 openGraph: {
-  title: "Malvin - Full-Stack Developer",
+  title: "Malvin - Software Engineer",
   description: "Open to collaboration. Crafting scalable and beautiful digital experiences with React, Next.js, Node.js, and more.",
   type: "website",
 }
