@@ -57,18 +57,29 @@ export function HeroSection() {
             </Button>
 
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
-              </Button>
+              <a href="https://github.com/sehmaluva" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+                  <Github className="h-5 w-5" />
+                  <span className="sr-only">GitHub</span>
+                </Button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/malvin-t-machingura"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                  <span className="sr-only">LinkedIn</span>
+                </Button>
+              </a>
+              <a href="mailto:sehmaluva@gmail.com" aria-label="Email">
+                <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+                  <Mail className="h-5 w-5" />
+                  <span className="sr-only">Email</span>
+                </Button>
+              </a>
             </div>
           </motion.div>
         </motion.div>
