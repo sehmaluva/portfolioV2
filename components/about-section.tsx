@@ -19,25 +19,25 @@ const skills = [
 
 const timeline = [
   {
-    year: "2024 — Present",
+    year: "May 2025 — Present",
     title: "Software Engineer Intern",
-    company: "TechCorp",
+    company: "Fincheck Pvt Ltd",
     description:
-      "Leading development of scalable web applications using React, Next.js, and Node.js. Mentoring junior developers and architecting cloud-native solutions.",
+      "Focused on backend development using python and django. Contributed to building and maintaining RESTful APIs, optimizing database queries, and ensuring application scalability.",
   },
   {
-    year: "2022 — 2024",
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
+    year: " March 2025 — May 2025",
+    title: "IT Intern",
+    company: "Chitungwiza Municipality",
     description:
-      "Built and maintained multiple client projects from concept to deployment. Specialized in React ecosystem and modern backend technologies.",
+      "Assisted in the maintenance of internal tools and applications. Collaborated with the IT team to troubleshoot and resolve technical issues.",
   },
   {
-    year: "2020 — 2022",
-    title: "Frontend Developer",
-    company: "DesignStudio",
+    year: "2023 — Current",
+    title: "HBSc Software Engineering Student",
+    company: "Bindura University of Science Education",
     description:
-      "Focused on creating pixel-perfect, responsive user interfaces. Collaborated closely with designers to bring creative visions to life.",
+      "Studied various aspects of software engineering, including web development, database management, and software architecture.",
   },
 ]
 
