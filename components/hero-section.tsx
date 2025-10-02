@@ -29,7 +29,7 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Creative Full-Stack Developer
+            Building bugs professionally since… yesterday
           </motion.h2>
 
           <motion.p
