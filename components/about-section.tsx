@@ -19,25 +19,25 @@ const skills = [
 
 const timeline = [
   {
-    year: "2024 — Present",
-    title: "Senior Full-Stack Developer",
-    company: "TechCorp",
+    year: "May 2025 — Present",
+    title: "Software Engineer Intern",
+    company: "Fincheck Pvt Ltd",
     description:
-      "Leading development of scalable web applications using React, Next.js, and Node.js. Mentoring junior developers and architecting cloud-native solutions.",
+      "Focused on backend development using python and django. Contributed to building and maintaining RESTful APIs, optimizing database queries, and ensuring application scalability.",
   },
   {
-    year: "2022 — 2024",
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
+    year: " March 2025 — May 2025",
+    title: "IT Intern",
+    company: "Chitungwiza Municipality",
     description:
-      "Built and maintained multiple client projects from concept to deployment. Specialized in React ecosystem and modern backend technologies.",
+      "Assisted in the maintenance of internal tools and applications. Collaborated with the IT team to troubleshoot and resolve technical issues.",
   },
   {
-    year: "2020 — 2022",
-    title: "Frontend Developer",
-    company: "DesignStudio",
+    year: "2023 — Current",
+    title: "HBSc Software Engineering Student",
+    company: "Bindura University of Science Education",
     description:
-      "Focused on creating pixel-perfect, responsive user interfaces. Collaborated closely with designers to bring creative visions to life.",
+      "Studied various aspects of software engineering, including web development, database management, and software architecture.",
   },
 ]
 
@@ -72,14 +72,9 @@ export function AboutSection() {
             </div>
 
             <p className="text-lg text-muted-foreground mb-6 text-pretty">
-              I'm a passionate full-stack developer with over 4 years of experience creating digital solutions that make
-              a difference. My journey began with a curiosity about how websites work, and it has evolved into a deep
-              love for crafting exceptional user experiences.
-            </p>
-
-            <p className="text-lg text-muted-foreground mb-8 text-pretty">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
-              sharing knowledge with the developer community through blog posts and mentoring.
+              I'm a full-stack developer with a solid foundation in backend and frontend development. 
+              I build scalable, user-focused applications using Python, Django, and modern web frameworks. 
+              My experience spans RESTful APIs, database optimization, and real-world project delivery.
             </p>
 
             <div className="flex flex-wrap gap-2">
