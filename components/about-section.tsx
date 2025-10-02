@@ -20,7 +20,7 @@ const skills = [
 const timeline = [
   {
     year: "2024 — Present",
-    title: "Senior Full-Stack Developer",
+    title: "Software Engineer Intern",
     company: "TechCorp",
     description:
       "Leading development of scalable web applications using React, Next.js, and Node.js. Mentoring junior developers and architecting cloud-native solutions.",
