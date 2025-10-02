@@ -72,14 +72,9 @@ export function AboutSection() {
             </div>
 
             <p className="text-lg text-muted-foreground mb-6 text-pretty">
-              I'm a passionate full-stack developer with over 4 years of experience creating digital solutions that make
-              a difference. My journey began with a curiosity about how websites work, and it has evolved into a deep
-              love for crafting exceptional user experiences.
-            </p>
-
-            <p className="text-lg text-muted-foreground mb-8 text-pretty">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or
-              sharing knowledge with the developer community through blog posts and mentoring.
+              I'm a full-stack developer with a solid foundation in backend and frontend development. 
+              I build scalable, user-focused applications using Python, Django, and modern web frameworks. 
+              My experience spans RESTful APIs, database optimization, and real-world project delivery.
             </p>
 
             <div className="flex flex-wrap gap-2">
