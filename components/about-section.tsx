@@ -11,6 +11,7 @@ const skills = [
   "React",
   "Next.js",
   "Python",
+  "Django",
   "PostgreSQL",
   "Docker",
   "Git",
