@@ -8,7 +8,7 @@ import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "Malvin - Software Engineer",
-  description: "Passionate about building scalable and beautiful digital experiences. Full-stack developer open to collaboration—specializing in React, Next.js, Node.js, and modern web technologies.",
+  description: "Passionate about building scalable and beautiful digital experiences. Software Engineer open to collaboration—specializing in React, Next.js, Django, and modern web technologies.",
 keywords: [
   "Full-Stack Developer",
   "React",
