@@ -1,30 +1,61 @@
-# Personal portfolio website
+# Personal Portfolio Website
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/hongkong01-8967s-projects/v0-personal-portfolio-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/t2SP4fiQxsd)
+## About
 
-## Overview
+This is my personal portfolio website showcasing my projects, skills, and professional experience. The site features a clean, modern design with smooth animations and responsive layouts that work perfectly on all devices.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Features
 
-## Deployment
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Modern UI**: Clean and professional interface with smooth animations
+- **Dark/Light Theme**: Theme toggle for better user experience
+- **Project Showcase**: Detailed project presentations with images and descriptions
+- **Skills Section**: Visual representation of technical skills and expertise
+- **Contact Form**: Easy way to get in touch
+- **Performance Optimized**: Built with Next.js for fast loading times
 
-Your project is live at:
+## Tech Stack
 
-**[https://vercel.com/hongkong01-8967s-projects/v0-personal-portfolio-website](https://vercel.com/hongkong01-8967s-projects/v0-personal-portfolio-website)**
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Components**: Custom React components with shadcn/ui
+- **Icons**: Lucide React icons
+- **Deployment**: Ready for deployment on any platform
 
-## Build your app
+## Getting Started
 
-Continue building your app on:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sehmaluva/portfolioV2.git
+   ```
 
-**[https://v0.app/chat/projects/t2SP4fiQxsd](https://v0.app/chat/projects/t2SP4fiQxsd)**
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
-## How It Works
+3. Run the development server:
+   ```bash
+   pnpm dev
+   ```
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+```
+├── app/                 # Next.js app directory
+├── components/          # React components
+│   ├── ui/             # UI components (buttons, cards, etc.)
+│   └── ...             # Page-specific components
+├── lib/                # Utility functions
+├── public/             # Static assets
+└── styles/             # Global styles
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
