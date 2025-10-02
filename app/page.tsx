@@ -20,7 +20,7 @@ export default function Home() {
 
       <footer className="py-8 px-6 border-t border-border">
         <div className="container mx-auto text-center">
-          <p className="text-muted-foreground">© 2025 Alex Chen. Built with Next.js and Tailwind CSS.</p>
+          <p className="text-muted-foreground">&copy; 2025 sehmaluva. All rights reserved.</p>
         </div>
       </footer>
     </main>
