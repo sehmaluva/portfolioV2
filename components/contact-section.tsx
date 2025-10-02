@@ -20,7 +20,7 @@ export function ContactSection() {
  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
+    // To be implemented: form submission logic (e.g., send data to an API or email service)
     console.log("Form submitted:", formData)
   }
 
