@@ -135,21 +135,7 @@ export function ContactSection() {
           </div>
           <div>
             <p className="font-medium">Email</p>
-            <p className="text-muted-foreground">sehmaluv@gmail.com.com</p>
-          </div>
-              </motion.div>
-
-              <motion.div
-          className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
-          whileHover={{ x: 10 }}
-          transition={{ type: "spring", stiffness: 300 }}
-              >
-          <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-            <Phone className="h-5 w-5 text-primary" />
-          </div>
-          <div>
-            <p className="font-medium">Phone</p>
-            <p className="text-muted-foreground">+263 77 510 1044</p>
+            <p className="text-muted-foreground">sehmaluv@gmail.com</p>
           </div>
               </motion.div>
 
