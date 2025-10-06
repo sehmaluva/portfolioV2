@@ -139,6 +139,19 @@ export function ContactSection() {
           </div>
               </motion.div>
 
+              <motion.a
+          className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
+          whileHover={{ x: 10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+              >
+          <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+            <Linkedin className="h-5 w-5 text-primary" />
+          </div>
+          <div>
+            <a className="font-medium" href="https://www.linkedin.com/in/malvin-t-machingura" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+              </motion.a>
+
               <motion.div
           className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
           whileHover={{ x: 10 }}
