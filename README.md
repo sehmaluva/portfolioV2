@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS
 
-![Link to live](https://portfolio-v20-git-main-hongkong01-8967s-projects.vercel.app/)
+![Link to live](https://www.sehmaluva.me/)
 
 ## About
 
