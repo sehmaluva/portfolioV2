@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS
 
-![Link to live](https://www.sehmaluva.me/)
+[Link to live](https://sehmaluva.me/)
 
 ## About
 
