@@ -25,7 +25,7 @@ This is my personal portfolio website showcasing my projects, skills, and profes
 - **Styling**: Tailwind CSS
 - **Components**: Custom React components with shadcn/ui
 - **Icons**: Lucide React icons
-- **Deployment**: Deployed on (Vercel)[https://sehmaluva.me]
+- **Deployment**: Deployed on  [Vercel](https://sehmaluva.me)
 
 ## Getting Started
 
