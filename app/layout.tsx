@@ -43,6 +43,7 @@ export const metadata: Metadata = {
     "malvin t machingura",
     "malvin t.",
     "machingura",
+    "malvin machingura",
   ],
   authors: [{ name: "Malvin Machingura" }],
   openGraph: {
