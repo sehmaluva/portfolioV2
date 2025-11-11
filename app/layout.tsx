@@ -9,7 +9,7 @@ import { Suspense } from "react"
 export const metadata: Metadata = {
   title: "Malvin Machingura | Software Engineer in Zimbabwe",
   description:
-    "I am a Software Engineer based in Zimbabwe, specializing in React, Next.js, Django, and scalable web applications, AI and Machine Learning. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
+    "I am a Software Engineer based in Zimbabwe, specializing in building scalable web applications, AI and Machine Learning solutions. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
   keywords: [
     "Malvin Machingura",
     "Full-Stack Software Engineer",
