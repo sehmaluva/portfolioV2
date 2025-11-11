@@ -7,22 +7,13 @@ import "./globals.css"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Malvin Machingura | Full-Stack Software Engineer in Zimbabwe",
+  title: "Malvin Machingura | Software Engineer in Zimbabwe",
   description:
-    "Malvin Machingura is a Full-Stack Software Engineer based in Zimbabwe, specializing in React, Next.js, Django, and scalable web applications. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
+    "I am a Software Engineer based in Zimbabwe, specializing in React, Next.js, Django, and scalable web applications, AI and Machine Learning. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
   keywords: [
     "Malvin Machingura",
     "Full-Stack Software Engineer",
     "Software Developer Zimbabwe",
-    "React Developer",
-    "Next.js Developer",
-    "Django Developer",
-    "TypeScript Engineer",
-    "JavaScript Developer",
-    "Web Application Development",
-    "Scalable Web Solutions",
-    "Open Source Contributor",
-    "Tech Enthusiast Africa",
     "Bindura University of Science Education",
     "BUSE",
     "Harare Developer",
@@ -30,10 +21,6 @@ export const metadata: Metadata = {
     "Africa Tech Talent",
     "Portfolio Website",
     "API Development",
-    "Modern Web Technologies",
-    "Remote Collaboration",
-    "Project Partner",
-    "Web Design Zimbabwe",
     "sehmaluva",
     "malvin",
     "seh maluva",
@@ -47,9 +34,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Malvin Machingura" }],
   openGraph: {
-    title: "Malvin Machingura | Full-Stack Software Engineer in Zimbabwe",
+    title: "Malvin Machingura | Software Engineer in Zimbabwe",
     description:
-      "Explore Malvin Machingura’s portfolio—expert in React, Next.js, Django, and scalable web development. Open to global collaboration and tech partnerships.",
+      "Explore Malvin Machingura’s portfolio—expert in Django and scalable web development. Open to global collaboration and tech partnerships.",
     type: "website",
   },
 }
