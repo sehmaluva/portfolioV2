@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
+import MatrixBackground from "../components/matrix"
 
 export const metadata: Metadata = {
   title: "Malvin Machingura | Software Engineer in Zimbabwe",
@@ -50,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+        <MatrixBackground />
         <Suspense>
           {children}
           <Analytics />
