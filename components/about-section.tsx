@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
+import Image from 'next/image';
 
 const skills = [
   "HTML",
@@ -67,7 +68,13 @@ export function AboutSection() {
             <div className="relative mb-8">
               <div className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-1">
                 <div className="w-full h-full rounded-2xl bg-card flex items-center justify-center">
-                  <div className="text-6xl">👨‍💻</div>
+                    <Image
+                    src="/profile.png"
+                    alt="Profile Picture"
+                    width={256}
+                    height={256}
+                    className="rounded-2xl object-cover"
+                    />
                 </div>
               </div>
             </div>
