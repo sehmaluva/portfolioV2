@@ -7,10 +7,11 @@ import "./globals.css"
 import { Suspense } from "react"
 import MatrixBackground from "../components/matrix"
 
+const siteUrl = "https://sehmaluva.me"
 export const metadata: Metadata = {
-  title: "Malvin Machingura | Software Engineer in Zimbabwe",
+  title: "Malvin Machingura (sehmaluva)| Software Engineer in Zimbabwe",
   description:
-    "I am a Software Engineer based in Zimbabwe, specializing in building scalable web applications, AI and Machine Learning solutions. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
+    "I am a Malvin Machingura (also knowns as sehmaluva, seh, or maluva), a Software Engineer based in Zimbabwe, specializing in building scalable web applications, AI and Machine Learning solutions. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
   keywords: [
     "Malvin Machingura",
     "Full-Stack Software Engineer",
@@ -33,12 +34,42 @@ export const metadata: Metadata = {
     "machingura",
     "malvin machingura",
   ],
-  authors: [{ name: "Malvin Machingura" }],
+  authors: [{ name: "Malvin Machingura", url: siteUrl }],
+  creator: "Malvin Machingura",
   openGraph: {
-    title: "Malvin Machingura | Software Engineer in Zimbabwe",
+    title: "Malvin Machingura (sehmaluva)| Software Engineer",
     description:
-      "Explore Malvin Machingura’s portfolio—expert in Django and scalable web development. Open to global collaboration and tech partnerships.",
+      "Explore Malvin Machingura’s portfolio—expert expert Software Engineer based in Zimbabwe. Open to global collaboration and tech partnerships.",
+    url: siteUrl,
+    siteName: "Malvin Machingura Portfolio",
+    images: [
+      {
+        url: "https://sehmaluva.me/public/profile.png",
+        width: 1200,
+        height: 630,
+        alt: "Malvin Machingura Portfolio",
+      },
+    ],
+    locale: "en_US",
     type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Malvin Machingura (sehmaluva)| Software Engineer",
+    description:
+      "Explore Malvin Machingura’s (sehmaluva) portfolio—expert Software Engineer based in Zimbabwe. Open to global collaboration and tech partnerships.",
+    images: [`${siteUrl}/public/profile.png`],
   },
 }
 
