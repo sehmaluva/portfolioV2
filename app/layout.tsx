@@ -6,12 +6,13 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
 import MatrixBackground from "../components/matrix"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const siteUrl = "https://sehmaluva.me"
 export const metadata: Metadata = {
   title: "Malvin Machingura (sehmaluva)| Software Engineer in Zimbabwe",
   description:
-    "I am a Malvin Machingura (also knowns as sehmaluva, seh, or maluva), a Software Engineer based in Zimbabwe, specializing in building scalable web applications, AI and Machine Learning solutions. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
+    "I am a Malvin Machingura (also knowns as seh maluva, seh, or maluva), a Software Engineer based in Zimbabwe, specializing in building scalable web applications, AI and Machine Learning solutions. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
   keywords: [
     "Malvin Machingura",
     "Full-Stack Software Engineer",
