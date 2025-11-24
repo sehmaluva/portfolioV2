@@ -86,6 +86,7 @@ export default function RootLayout({
         <MatrixBackground />
         <Suspense>
           {children}
+          <SpeedInsights />
           <Analytics />
         </Suspense>
       </body>
