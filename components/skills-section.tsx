@@ -2,38 +2,42 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
+import { 
+  Code, Database, Server, Layout, Globe, GitBranch, Cloud, 
+  Box, Workflow, Hash, Github, Terminal
+} from "lucide-react"
 
 const skillCategories = [
   {
     title: "Frontend",
     skills: [
-      { name: "React", level: 50 },
-      { name: "Next.js", level: 50 },
-      { name: "TypeScript", level: 50 },
-      { name: "Tailwind CSS", level: 50 },
-      { name: "Framer Motion", level: 50 },
+      { name: "React", icon: Layout },
+      { name: "Next.js", icon: Globe },
+      { name: "TypeScript", icon: Code },
+      { name: "Tailwind CSS", icon: Box },
+      { name: "Framer Motion", icon: Workflow },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Django", level: 90 },
-      { name: "Node.js", level: 40 },
-      { name: "Python", level: 82 },
-      { name: "PostgreSQL", level: 80 },
-      { name: "RESTful APIs", level: 75 }, 
-      { name: "Flask", level: 60 },
+      { name: "Django", icon: Server },
+      { name: "Node.js", icon: Server },
+      { name: "Python", icon: Hash },
+      { name: "PostgreSQL", icon: Database },
+      { name: "RESTful APIs", icon: Globe },
+      { name: "Flask", icon: Terminal },
     ],
   },
   {
     title: "DevOps & Tools",
     skills: [
-      { name: "Docker", level: 75 },
-      { name: "AWS", level: 50 },
-      { name: "Git", level: 95 },
-      { name: "GitHub", level: 90 },
-      { name: "Vercel", level: 90 },
-      { name: "CI/CD", level: 80 },
+      { name: "Docker", icon: Box },
+      { name: "AWS", icon: Cloud },
+      { name: "Git", icon: GitBranch },
+      { name: "GitHub", icon: Github },
+      { name: "Vercel", icon: Cloud },
+      { name: "CI/CD", icon: Workflow },
     ],
   },
 ]
@@ -69,37 +73,21 @@ export function SkillsSection() {
               <Card className="p-6 h-full">
                 <h3 className="text-xl font-semibold mb-6 text-center text-primary">{category.title}</h3>
 
-                <div className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
                   {category.skills.map((skill, skillIndex) => (
                     <motion.div
                       key={skill.name}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
                       transition={{
                         delay: categoryIndex * 0.2 + skillIndex * 0.1,
                         duration: 0.5,
                       }}
                       viewport={{ once: true }}
-                      className="space-y-2"
+                      className="flex flex-col items-center justify-center p-3 bg-muted/50 rounded-lg hover:bg-muted transition-colors"
                     >
-                      <div className="flex justify-between items-center">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                      </div>
-
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <motion.div
-                          className="bg-gradient-to-r from-primary to-accent h-2 rounded-full"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          transition={{
-                            delay: categoryIndex * 0.2 + skillIndex * 0.1 + 0.3,
-                            duration: 1,
-                            ease: "easeOut",
-                          }}
-                          viewport={{ once: true }}
-                        />
-                      </div>
+                      <skill.icon className="w-8 h-8 mb-2 text-primary" />
+                      <span className="font-medium text-sm text-center">{skill.name}</span>
                     </motion.div>
                   ))}
                 </div>

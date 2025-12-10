@@ -25,7 +25,7 @@ const timeline = [
     title: "Software Engineer Intern",
     company: "Fincheck Pvt Ltd",
     description:
-      "Focused on backend development using python and django. Contributed to building and maintaining RESTful APIs, optimizing database queries, and ensuring application scalability.",
+      "Backend engineering using Django Rest Framework (DRF). Optimized database queries using Django ORM and built scalable RESTful APIs.",
   },
   {
     year: " March 2025 — May 2025",

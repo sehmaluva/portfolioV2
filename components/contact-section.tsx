@@ -135,11 +135,11 @@ export function ContactSection() {
           </div>
           <div>
             <p className="font-medium">Email</p>
-            <p className="text-muted-foreground">sehmaluv@gmail.com</p>
+            <p className="text-muted-foreground">sehmaluva@gmail.com</p>
           </div>
               </motion.div>
 
-              <motion.a
+              <motion.div
           className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
           whileHover={{ x: 10 }}
           transition={{ type: "spring", stiffness: 300 }}
@@ -150,7 +150,7 @@ export function ContactSection() {
           <div>
             <a className="font-medium" href="https://www.linkedin.com/in/malvin-t-machingura" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
-              </motion.a>
+              </motion.div>
 
               <motion.div
           className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"

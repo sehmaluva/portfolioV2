@@ -3,62 +3,68 @@
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink, Github, Star } from "lucide-react"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Student Fest",
     description:
-      "A full-stack e-commerce solution built with Next.js, Stripe, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-    image: "/modern-ecommerce-interface.png",
-    tech: ["Next.js", "TypeScript", "PostgreSQL", "Stripe", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    image: "/task-management-dashboard.png",
-    tech: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Weather Analytics Dashboard",
-    description:
-      "A data visualization dashboard that displays weather patterns and analytics using real-time weather APIs and interactive charts.",
-    image: "/weather-analytics-dashboard-with-charts.jpg",
-    tech: ["React", "D3.js", "Python", "FastAPI", "Chart.js"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Social Media Platform",
-    description:
-      "A modern social media platform with real-time messaging, image sharing, and social features built with the latest web technologies.",
-    image: "/social-media-interface.png",
-    tech: ["Next.js", "Supabase", "TypeScript", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "AI Content Generator",
-    description:
-      "An AI-powered content generation tool that helps users create blog posts, social media content, and marketing copy using advanced language models.",
-    image: "/ai-content-generator-interface.png",
-    tech: ["Next.js", "OpenAI API", "Prisma", "PostgreSQL"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Portfolio Website Builder",
-    description:
-      "A drag-and-drop website builder specifically designed for creating beautiful portfolio websites with customizable templates and themes.",
+      "Beginner-friendly introduction to coding and open source experience with coding challenges & real world projects.",
     image: "/website-builder-interface.png",
-    tech: ["React", "Node.js", "MongoDB", "AWS S3"],
+    tech: ["Python", "Open Source"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/student-fest",
+    stars: 17,
+  },
+  {
+    title: "Personal Portfolio V2",
+    description:
+      "Software Engineer Portfolio using Next.js. A showcase of my skills and projects.",
+    image: "/modern-ecommerce-interface.png",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/portfolioV2",
+    stars: 9,
+  },
+  {
+    title: "Minija Management System",
+    description:
+      "An advanced broiler project management system using Python and TypeScript.",
+    image: "/task-management-dashboard.png",
+    tech: ["Python", "TypeScript", "Django"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/minija",
+    stars: 4,
+  },
+  {
+    title: "TalentVerify HR Platform",
+    description:
+      "An HR system for managing multiple employees and companies and also tracks employee history.",
+    image: "/social-media-interface.png",
+    tech: ["JavaScript", "React", "Node.js"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/TalentVerify",
+    stars: 4,
+  },
+  {
+    title: "WhatIf Imagination World",
+    description:
+      "The Imagination World. A creative platform for exploring ideas.",
+    image: "/ai-content-generator-interface.png",
+    tech: ["JavaScript", "React"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/whatif",
+    stars: 1,
+  },
+  {
+    title: "Budget Buddy",
+    description:
+      "Budget management frontend application for tracking expenses and managing finances.",
+    image: "/weather-analytics-dashboard-with-charts.jpg",
+    tech: ["TypeScript", "React"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/budget-buddy-frontend",
+    stars: 5,
   },
 ]
 
@@ -98,21 +104,37 @@ export function ProjectsSection() {
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <Button size="sm" variant="secondary" className="glass-effect">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
+                    <Button size="sm" variant="secondary" className="glass-effect" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </a>
                     </Button>
-                    <Button size="sm" variant="secondary" className="glass-effect">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
+                    <Button size="sm" variant="secondary" className="glass-effect" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
                     </Button>
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                    <a 
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-muted-foreground text-sm hover:text-primary transition-colors"
+                      title="GitHub Stars"
+                    >
+                        <Star className="h-4 w-4 fill-current text-yellow-500" />
+                        <span>{project.stars} Stars</span>
+                    </a>
+                  </div>
                   <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2">
