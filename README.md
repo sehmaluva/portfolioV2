@@ -1,20 +1,22 @@
 # My Personal Portfolio
 
-## Live Demo
+## 🔗 Live Demo
 
 **View the live portfolio:** [https://sehmaluva.me](https://sehmaluva.me)
 
-## Project Overview
+## 📖 Project Overview
 
 This is the source code for my personal portfolio website, designed to showcase my skills, experience, and featured projects as a Full-Stack Software Engineer.
 
 It serves as a dynamic online CV, providing an in-depth look into my technical proficiency and career journey.
 
-## Disclaimer
+## ⚠️ Disclaimer !!!
 
 This project is open source and available for anyone to use. Feel free to star the repository if you find it useful, fork it to make your own changes, or use it as a template for your own portfolio!
 
-## Features
+Dont forget to star ⭐ the project if you find it helpful!
+
+## ✨ Features
 
 * **About Me:** A detailed introduction to my background and technical philosophy.
 * **Experience Timeline:** A chronological overview of my professional and academic history.
@@ -23,7 +25,7 @@ This project is open source and available for anyone to use. Feel free to star t
 * **Contact Form:** A direct channel for recruiters and collaborators to get in touch.
 * **Theme Toggle:** Light/Dark mode functionality (as seen on the live site).
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 This project is built using a modern, scalable, and robust technology stack:
 
@@ -45,7 +47,7 @@ Follow these steps to set up the project locally for development and testing.
 * Node.js
 * npm, yarn or pnpm
 
-### Forking the Repository
+### 🍴 Forking the Repository
 
 1.  Click the **Fork** button in the top-right corner of the page.
 2.  This will create a copy of the repository in your GitHub account.
