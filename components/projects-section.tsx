@@ -4,27 +4,45 @@ import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github, Star } from "lucide-react"
+import { useEffect, useMemo, useState } from "react"
 
-const projects = [
+type Project = {
+  title: string
+  description: string
+  image: string
+  tech: string[]
+  liveUrl: string
+  githubUrl: string
+  stars?: number
+}
+
+const projects: Project[] = [
   {
     title: "Student Fest",
     description:
       "Beginner-friendly introduction to coding and open source experience with coding challenges & real world projects.",
-    image: "/website-builder-interface.png",
+    image: "/student_fest.png",
     tech: ["Python", "Open Source"],
     liveUrl: "https://sehmaluva.github.io/student-fest",
     githubUrl: "https://github.com/sehmaluva/student-fest",
-    stars: 17,
   },
   {
-    title: "Personal Portfolio V2",
+    title: "GitWrapped",
+    description:
+      "2025 GitHub Contributions Wrapped: visualize your yearly activity and highlights.",
+    image: "/gitwrapped_screenshot.png",
+    tech: ["TypeScript", "Next.js"],
+    liveUrl: "https://gitwrapped.sehmaluva.me",
+    githubUrl: "https://github.com/sehmaluva/gitwrapped",
+  },
+  {
+    title: "Personal Portfolio",
     description:
       "Software Engineer Portfolio using Next.js. A showcase of my skills and projects.",
-    image: "/modern-ecommerce-interface.png",
+    image: "/portfolio_screenshot.png",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://sehmaluva.me",
     githubUrl: "https://github.com/sehmaluva/portfolioV2",
-    stars: 9,
   },
   {
     title: "Minija Management System",
@@ -34,17 +52,6 @@ const projects = [
     tech: ["Python", "TypeScript", "Django"],
     liveUrl: "#",
     githubUrl: "https://github.com/sehmaluva/minija",
-    stars: 4,
-  },
-  {
-    title: "TalentVerify HR Platform",
-    description:
-      "An HR system for managing multiple employees and companies and also tracks employee history.",
-    image: "/social-media-interface.png",
-    tech: ["JavaScript", "React", "Node.js"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/sehmaluva/TalentVerify",
-    stars: 4,
   },
   {
     title: "WhatIf Imagination World",
@@ -54,7 +61,6 @@ const projects = [
     tech: ["JavaScript", "React"],
     liveUrl: "#",
     githubUrl: "https://github.com/sehmaluva/whatif",
-    stars: 1,
   },
   {
     title: "Budget Buddy",
@@ -64,11 +70,66 @@ const projects = [
     tech: ["TypeScript", "React"],
     liveUrl: "#",
     githubUrl: "https://github.com/sehmaluva/budget-buddy-frontend",
-    stars: 5,
   },
 ]
 
 export function ProjectsSection() {
+  const [starsMap, setStarsMap] = useState<Record<string, number>>({})
+
+  const repos = useMemo(() => {
+    return projects
+      .map((p) => {
+        try {
+          const url = new URL(p.githubUrl)
+          const [, owner, repo] = url.pathname.split("/")
+          if (!owner || !repo) return null
+          return { key: p.githubUrl, owner, repo }
+        } catch {
+          return null
+        }
+      })
+      .filter(Boolean) as { key: string; owner: string; repo: string }[]
+  }, [])
+
+  useEffect(() => {
+    let cancelled = false
+    async function fetchStars() {
+      try {
+        const results = await Promise.all(
+          repos.map(async ({ key, owner, repo }) => {
+            try {
+              const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+                headers: {
+                  // If a token is later provided via env, we can inject it here.
+                },
+                next: { revalidate: 3600 },
+              })
+              if (!res.ok) throw new Error("GitHub API error")
+              const data = await res.json()
+              const stars = typeof data?.stargazers_count === "number" ? data.stargazers_count : undefined
+              return { key, stars }
+            } catch {
+              return { key, stars: undefined }
+            }
+          })
+        )
+        if (!cancelled) {
+          const map: Record<string, number> = {}
+          for (const r of results) {
+            if (typeof r.stars === "number") map[r.key] = r.stars
+          }
+          setStarsMap(map)
+        }
+      } catch {
+        // swallow; UI will use fallback
+      }
+    }
+    fetchStars()
+    return () => {
+      cancelled = true
+    }
+  }, [repos])
+
   return (
     <section id="projects" className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto max-w-7xl">
@@ -132,7 +193,7 @@ export function ProjectsSection() {
                       title="GitHub Stars"
                     >
                         <Star className="h-4 w-4 fill-current text-yellow-500" />
-                        <span>{project.stars} Stars</span>
+                        <span>{typeof starsMap[project.githubUrl] === "number" ? starsMap[project.githubUrl] : project.stars ?? 0} Stars</span>
                     </a>
                   </div>
                   <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{project.description}</p>
