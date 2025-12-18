@@ -59,7 +59,7 @@ const projects: Project[] = [
       "The Imagination World. A creative platform for exploring ideas.",
     image: "/ai-content-generator-interface.png",
     tech: ["JavaScript", "React"],
-    liveUrl: "#",
+    liveUrl: "sehmaluva.github.io/whatif/",
     githubUrl: "https://github.com/sehmaluva/whatif",
   },
   {
