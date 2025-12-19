@@ -12,7 +12,7 @@ const siteUrl = "https://sehmaluva.me"
 export const metadata: Metadata = {
   title: "Malvin Machingura (sehmaluva)| Software Engineer in Zimbabwe",
   description:
-    "I am Malvin Machingura , a Software Engineer based in Zimbabwe, specializing in building scalable web applications, AI and Machine Learning solutions. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
+    "I am Malvin Machingura , a Software Engineer, specializing in building scalable web applications, AI and Machine Learning solutions. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
   keywords: [
     "Malvin Machingura",
     "Full-Stack Software Engineer",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Malvin Machingura (sehmaluva)| Software Engineer",
     description:
-      "Explore Malvin Machingura’s portfolio—expert expert Software Engineer based in Zimbabwe. Open to global collaboration and tech partnerships.",
+      "Explore Malvin Machingura’s portfolio. Software Engineer | Python & React Developer | Building Real-World Solutions. Open to global collaboration and tech partnerships.",
     url: siteUrl,
     siteName: "Malvin Machingura Portfolio",
     images: [
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Malvin Machingura (sehmaluva)| Software Engineer",
     description:
-      "Explore Malvin Machingura’s (sehmaluva) portfolio—expert Software Engineer based in Zimbabwe. Open to global collaboration and tech partnerships.",
+      "Explore Malvin Machingura’s (sehmaluva) portfolio. Software Engineer | Python & React Developer | Building Real-World Applicaion Solutions. Open to global collaboration and tech partnerships.",
     images: [`${siteUrl}/public/profile.png`],
   },
 }
