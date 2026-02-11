@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Malvin Machingura Portfolio",
     images: [
       {
-        url: "https://sehmaluva.me/",
+        url: [`${siteUrl}/public/profile.png`],
         width: 1200,
         height: 630,
         alt: "Malvin Machingura",
