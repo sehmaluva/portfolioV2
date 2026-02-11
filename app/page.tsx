@@ -21,7 +21,7 @@ export default function Home() {
 
       <footer className="py-8 px-6 border-t border-border">
         <div className="container mx-auto text-center">
-          <p className="text-muted-foreground">&copy; {new Date().getFullYear()} @sehmaluva. YeaR of CodE</p>
+          <p className="text-muted-foreground">&copy; {new Date().getFullYear()} @sehmaluva. Rights Reserved</p>
         </div>
       </footer>
     </main>
