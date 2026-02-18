@@ -83,6 +83,11 @@ export function AchievementsSection() {
                 data-share-badge-id="e0b6d724-15e4-473a-b8e8-ff22d50b7409" 
                 data-share-badge-host="https://www.credly.com"
               ></div>
+              <div data-iframe-width="150" 
+                data-iframe-height="270" 
+                data-share-badge-id="81443fec-9e25-4199-af1d-24c0b3433fee" 
+                data-share-badge-host="https://www.credly.com">
+              </div>
 
               {/* Postman Certification */}
               <Card className="w-[150px] h-[270px] flex flex-col items-center justify-between p-4 bg-white dark:bg-secondary/10 border border-border/50">
