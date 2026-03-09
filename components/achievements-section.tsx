@@ -21,7 +21,7 @@ export function AchievementsSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Achievements</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Recognition of my technical expertise and contributions to the open-source community.
+            Recognition of my contributions to the open-source community and Certicifications of course completion from diffrent organizations.
           </p>
         </motion.div>
 
@@ -47,7 +47,7 @@ export function AchievementsSection() {
               </div>
               <div className="mt-6 text-center">
                 <p className="text-muted-foreground mb-4">
-                  Collected through contributions to various open-source projects during Hacktoberfest and other events.
+                  Collected through contributions to open-source projects during Hacktoberfest 2025.
                 </p>
                 <Button variant="outline" asChild>
                   <a href="https://holopin.io/@sehmaluva" target="_blank" rel="noopener noreferrer">
@@ -88,6 +88,11 @@ export function AchievementsSection() {
                 data-share-badge-id="81443fec-9e25-4199-af1d-24c0b3433fee" 
                 data-share-badge-host="https://www.credly.com">
               </div>
+              <div data-iframe-width="150" 
+                data-iframe-height="270" 
+                data-share-badge-id="9d99b397-b635-4f45-84b4-4ac2da1b6746" 
+                data-share-badge-host="https://www.credly.com">
+              </div>
 
               {/* Postman Certification */}
               <Card className="w-[150px] h-[270px] flex flex-col items-center justify-between p-4 bg-white dark:bg-secondary/10 border border-border/50">
@@ -102,7 +107,7 @@ export function AchievementsSection() {
                     <h4 className="font-bold text-sm mb-1 leading-tight">Postman Student Expert</h4>
                     <p className="text-xs text-muted-foreground mb-3">Postman</p>
                     <Button variant="outline" size="sm" className="w-full text-xs h-8" asChild>
-                        <a href="https://www.linkedin.com/in/malvin-t-machingura/details/certifications/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/sehmaluva/details/certifications/" target="_blank" rel="noopener noreferrer">
                             Verify
                         </a>
                     </Button>
