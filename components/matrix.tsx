@@ -34,7 +34,7 @@ const MatrixBackground: React.FC = () => {
 
     let lastFrameTime = 0
     const frameInterval = 50 // ~20fps instead of ~30fps for better performance
-    let animationId: number
+    let animationId = 0
 
     const draw = (timestamp: number) => {
       animationId = requestAnimationFrame(draw)
