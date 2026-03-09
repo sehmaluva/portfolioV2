@@ -5,7 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
-import MatrixBackground from "../components/matrix"
+import MatrixWrapper from "../components/matrix-wrapper"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const siteUrl = "https://sehmaluva.me"
@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "machingura",
     "malvin machingura",
   ],
+  icons: {
+    icon: "/icon.svg",
+  },
   authors: [{ name: "Malvin Machingura", url: siteUrl }],
   creator: "Malvin Machingura",
   openGraph: {
@@ -45,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "Malvin Machingura Portfolio",
     images: [
       {
-        url: [`${siteUrl}/public/profile.png`],
+        url: `${siteUrl}/profile.png`,
         width: 1200,
         height: 630,
         alt: "Malvin Machingura",
@@ -70,7 +73,7 @@ export const metadata: Metadata = {
     title: "Malvin Machingura (sehmaluva)| Software Engineer",
     description:
       "Explore Malvin Machingura’s (sehmaluva) portfolio. Software Engineer | Building Real-World Applicaion Solutions. Open to global collaboration and tech partnerships.",
-    images: [`${siteUrl}/public/profile.png`],
+    images: [`${siteUrl}/profile.png`],
   },
 }
 
@@ -83,7 +86,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-        <MatrixBackground />
+        <MatrixWrapper />
         <Suspense>
           {children}
           <SpeedInsights />

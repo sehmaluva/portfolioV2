@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github, Star } from "lucide-react"
 import { useEffect, useMemo, useState } from "react"
+import Image from "next/image"
 
 type Project = {
   title: string
@@ -158,11 +159,13 @@ export function ProjectsSection() {
               viewport={{ once: true }}
             >
               <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div className="relative overflow-hidden">
-                  <img
+                <div className="relative overflow-hidden h-48">
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                     <Button size="sm" variant="secondary" className="glass-effect" asChild>
