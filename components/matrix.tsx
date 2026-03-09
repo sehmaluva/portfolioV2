@@ -32,7 +32,16 @@ const MatrixBackground: React.FC = () => {
       rainDrops[i] = 1
     }
 
-    const draw = () => {
+    let lastFrameTime = 0
+    const frameInterval = 50 // ~20fps instead of ~30fps for better performance
+    let animationId: number
+
+    const draw = (timestamp: number) => {
+      animationId = requestAnimationFrame(draw)
+
+      if (timestamp - lastFrameTime < frameInterval) return
+      lastFrameTime = timestamp
+
       context.fillStyle = "rgba(0, 0, 0, 0.05)"
       context.fillRect(0, 0, canvas.width, canvas.height)
 
@@ -50,7 +59,7 @@ const MatrixBackground: React.FC = () => {
       }
     }
 
-    const interval = setInterval(draw, 33)
+    animationId = requestAnimationFrame(draw)
 
     const handleResize = () => {
       setCanvasDimensions()
@@ -65,7 +74,7 @@ const MatrixBackground: React.FC = () => {
     window.addEventListener("resize", handleResize)
 
     return () => {
-      clearInterval(interval)
+      cancelAnimationFrame(animationId)
       window.removeEventListener("resize", handleResize)
     }
   }, [])

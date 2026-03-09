@@ -74,6 +74,7 @@ export function AboutSection() {
                     width={256}
                     height={256}
                     className="rounded-2xl object-cover"
+                    priority
                     />
                 </div>
               </div>
