@@ -107,7 +107,7 @@ export function AchievementsSection() {
                     <h4 className="font-bold text-sm mb-1 leading-tight">Postman Student Expert</h4>
                     <p className="text-xs text-muted-foreground mb-3">Postman</p>
                     <Button variant="outline" size="sm" className="w-full text-xs h-8" asChild>
-                        <a href="https://www.linkedin.com/in/sehmaluva/details/certifications/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/malvin-t-machingura/details/certifications/" target="_blank" rel="noopener noreferrer">
                             Verify
                         </a>
                     </Button>
@@ -117,7 +117,7 @@ export function AchievementsSection() {
 
             <div className="mt-6 text-center sm:text-left">
                  <Button variant="link" asChild className="text-muted-foreground hover:text-primary p-0">
-                  <a href="https://www.credly.com/users/malvin-t-machingura/badges" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.credly.com/users/sehmaluva/badges" target="_blank" rel="noopener noreferrer">
                     View all on Credly <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
