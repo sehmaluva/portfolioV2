@@ -29,7 +29,7 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Building bugs professionally since… yesterday
+            Software engineer focused on building reliable systems and learning through practice.
           </motion.h2>
 
           <motion.p
@@ -39,7 +39,7 @@ export function HeroSection() {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
            Software Engineer exploring the full stack of digital innovation from AI and cybersecurity to mobile and web development.
-           With a strong foundation in languages including Java, Python, and C++, I build solutions that are both technically sound and creatively inspired.
+           With a strong foundation in languages including Java, Python, Rust, and C++, I build solutions that are both technically sound and creatively inspired.
           </motion.p>
 
           <motion.div
