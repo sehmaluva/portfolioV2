@@ -5,27 +5,33 @@ import { Card } from "@/components/ui/card"
 import Image from 'next/image';
 
 const skills = [
+  "Python",
+  "Java",
+  "C++",
+  "Rust",
+  "Django",
+  "PostgreSQL",
+  "MongoDB:,
+  "Docker",
+  "Postman",
+  "RESTful API's",
+  "Git",
+  "GitHub",
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Python",
-  "Django",
-  "PostgreSQL",
-  "Docker",
-  "Git",
-  "GitHub",
 ]
 
 const timeline = [
   {
-    year: "May 2025 — Present",
+    year: "May 2025 — February 2026",
     title: "Software Engineer Intern",
     company: "Fincheck Pvt Ltd",
     description:
-      "Backend engineering using Django Rest Framework (DRF). Optimized database queries using Django ORM and built scalable RESTful APIs.",
+      "Assisted in the development of the Company projects, fixing bugs, Implimenting new features, Database management and DevOps",
   },
   {
     year: " March 2025 — May 2025",
@@ -39,7 +45,7 @@ const timeline = [
     title: "HBSc Software Engineering Student",
     company: "Bindura University of Science Education",
     description:
-      "Studied various aspects of software engineering, including web development, database management, and software architecture.",
+      "Studying various aspects of software engineering, including web development, database management, and software architecture, DSA, Operating Sytems",
   },
 ]
 
@@ -81,9 +87,9 @@ export function AboutSection() {
             </div>
 
             <p className="text-lg text-muted-foreground mb-6 text-pretty">
-              I'm a full-stack developer with a solid foundation in backend and frontend development. 
-              I build scalable, user-focused applications using Python, Django, and modern web frameworks. 
-              My experience spans RESTful APIs, database optimization, and real-world project delivery.
+              I'm a Software Engineer with working experience as a Backend engineer and . 
+              I build scalable, user-focused applications using C++, Rust, Python, Django, and modern web frameworks. 
+              My knowledge spans accros RESTful APIs, database optimization, and real-world project deliver.
             </p>
 
             <div className="flex flex-wrap gap-2">
