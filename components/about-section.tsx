@@ -11,7 +11,7 @@ const skills = [
   "Rust",
   "Django",
   "PostgreSQL",
-  "MongoDB:,
+  "MongoDB",
   "Docker",
   "Postman",
   "RESTful API's",
