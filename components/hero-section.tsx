@@ -39,7 +39,7 @@ export function HeroSection() {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
            Software Engineer exploring the full stack of digital innovation from AI and cybersecurity to mobile and web development.
-           With a strong foundation in languages including Java, Python, Rust, and C++, I build solutions that are both technically sound and creatively inspired.
+           With a strong foundation in languages including Java, Python, Rust, and C++.
           </motion.p>
 
           <motion.div
