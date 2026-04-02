@@ -168,8 +168,8 @@ importers:
         specifier: ^0.9.9
         version: 0.9.9(@types/react-dom@19.2.0(@types/react@19.2.0))(@types/react@19.2.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       zod:
-        specifier: 3.25.67
-        version: 3.25.67
+        specifier: 4.3.6
+        version: 4.3.6
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4.2.1
@@ -2192,8 +2192,8 @@ packages:
       typescript:
         optional: true
 
-  zod@3.25.67:
-    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
+  zod@4.3.6:
+    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
 
 snapshots:
 
@@ -4080,4 +4080,4 @@ snapshots:
       typescript: 5.9.3
     optional: true
 
-  zod@3.25.67: {}
+  zod@4.3.6: {}
