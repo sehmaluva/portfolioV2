@@ -22,9 +22,9 @@ const skillCategories = [
     title: "Backend",
     skills: [
       { name: "Django", icon: Server },
-      { name: "Node.js", icon: Server },
       { name: "Python", icon: Hash },
       { name: "PostgreSQL", icon: Database },
+      { name: "MongoDB", icon: Database },
       { name: "RESTful APIs", icon: Globe },
       { name: "Flask", icon: Terminal },
     ],

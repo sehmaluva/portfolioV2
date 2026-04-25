@@ -21,7 +21,7 @@ export function AchievementsSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Achievements</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Recognition of my contributions to the open-source community and Certicifications of course completion from diffrent organizations.
+            Recognition of my contributions to the open-source community and Certifications of course completion from different organizations.
           </p>
         </motion.div>
 

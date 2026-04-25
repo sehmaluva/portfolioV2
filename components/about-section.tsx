@@ -27,11 +27,18 @@ const skills = [
 
 const timeline = [
   {
+    year: "March 2026 — Current",
+    title: "Software Engineer",
+    company: "Credisafe",
+    description:
+      "Developing a full-stack platform using Django and React. Implementing features, optimizing performance, and ensuring security adn reliability",
+  },
+  {
     year: "May 2025 — February 2026",
     title: "Software Engineer Intern",
     company: "Fincheck Pvt Ltd",
     description:
-      "Assisted in the development of the Company projects, fixing bugs, Implimenting new features, Database management and DevOps",
+      "Assisted in the development of the Company projects, fixing bugs, Implementing new features, Database management and DevOps",
   },
   {
     year: " March 2025 — May 2025",
