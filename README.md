@@ -4,19 +4,15 @@
 
 **View the live portfolio:** [https://sehmaluva.me](https://sehmaluva.me)
 
-## 📖 Project Overview
+## Project Overview
 
 This is the source code for my personal portfolio website, designed to showcase my skills, experience, and featured projects as a Full-Stack Software Engineer.
 
 It serves as a dynamic online CV, providing an in-depth look into my technical proficiency and career journey.
 
-## ⚠️ Disclaimer !!!
-
-This project is open source and available for anyone to use. Feel free to star the repository if you find it useful, fork it to make your own changes, or use it as a template for your own portfolio!
-
 Dont forget to star ⭐ the project if you find it helpful!
 
-## ✨ Features
+## Features
 
 * **About Me:** A detailed introduction to my background and technical philosophy.
 * **Experience Timeline:** A chronological overview of my professional and academic history.
