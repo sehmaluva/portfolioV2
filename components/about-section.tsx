@@ -5,6 +5,11 @@ import { Card } from "@/components/ui/card"
 import Image from 'next/image';
 
 const skills = [
+  "Artificial Intelligence",
+  "Machine Learning",
+  "LLMs & GenAI",
+  "Deep Learning",
+  "PyTorch",
   "Python",
   "Java",
   "C++",
@@ -31,7 +36,7 @@ const timeline = [
     title: "Software Engineer",
     company: "Credisafe",
     description:
-      "Developing a full-stack platform using Django and React. Implementing features, optimizing performance, and ensuring security adn reliability",
+      "Developing a full-stack platform using Django and React. Implementing features, optimizing performance, and ensuring security and reliability",
   },
   {
     year: "May 2025 — February 2026",
@@ -52,7 +57,7 @@ const timeline = [
     title: "HBSc Software Engineering Student",
     company: "Bindura University of Science Education",
     description:
-      "Studying various aspects of software engineering, including web development, database management, and software architecture, DSA, Operating Sytems",
+      "Studying software engineering with a focus on AI algorithms, data science, web development, database management, software architecture, DSA, and operating systems",
   },
 ]
 
@@ -93,10 +98,8 @@ export function AboutSection() {
               </div>
             </div>
 
-            <p className="text-lg text-muted-foreground mb-6 text-pretty">
-              I'm a Software Engineer with working experience as a Backend engineer and . 
-              I build scalable, user-focused applications using C++, Rust, Python, Django, and modern web frameworks. 
-              My knowledge spans accros RESTful APIs, database optimization, and real-world project deliver.
+            <p className="text-lg text-muted-foreground mb-6 text-pretty leading-relaxed">
+              I'm a Software Engineer specializing in full-stack architecture, Artificial Intelligence, and Machine Learning solutions. I design and build scalable, user-focused applications using Python, C++, Rust, Django, and modern web frameworks. My expertise spans model training, intelligent automation, RESTful APIs, database optimization, and end-to-end production delivery.
             </p>
 
             <div className="flex flex-wrap gap-2">

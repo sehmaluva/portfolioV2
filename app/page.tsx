@@ -6,10 +6,12 @@ import { AchievementsSection } from "@/components/achievements-section"
 import { ContactSection } from "@/components/contact-section"
 import { Navigation } from "@/components/navigation"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { ScrollProgress } from "@/components/scroll-progress"
 
 export default function Home() {
   return (
     <main className="relative">
+      <ScrollProgress />
       <Navigation />
       <ThemeToggle />
       <HeroSection />
@@ -27,3 +29,4 @@ export default function Home() {
     </main>
   )
 }
+

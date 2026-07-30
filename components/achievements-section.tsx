@@ -1,15 +1,18 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card } from "@/components/ui/card"
-import { Award, ExternalLink } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Script from "next/script"
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
+import { Award, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Script from "next/script";
 
 export function AchievementsSection() {
   return (
     <section id="achievements" className="py-20 px-6">
-      <Script src="//cdn.credly.com/assets/utilities/embed.js" strategy="lazyOnload" />
+      <Script
+        src="//cdn.credly.com/assets/utilities/embed.js"
+        strategy="lazyOnload"
+      />
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -21,7 +24,8 @@ export function AchievementsSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Achievements</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-8" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Recognition of my contributions to the open-source community and Certifications of course completion from different organizations.
+            Recognition of my contributions to the open-source community and
+            Certifications of course completion from different organizations.
           </p>
         </motion.div>
 
@@ -47,10 +51,15 @@ export function AchievementsSection() {
               </div>
               <div className="mt-6 text-center">
                 <p className="text-muted-foreground mb-4">
-                  Collected through contributions to open-source projects during Hacktoberfest 2025.
+                  Collected through contributions to open-source projects during
+                  Hacktoberfest 2025.
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="https://holopin.io/@sehmaluva" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://holopin.io/@sehmaluva"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     View Full Profile <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -69,62 +78,178 @@ export function AchievementsSection() {
               <Award className="text-primary" />
               Certifications
             </h3>
-            
+
             <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
-              <div 
-                data-iframe-width="150" 
-                data-iframe-height="270" 
-                data-share-badge-id="3f4f7a9f-b470-49c0-a80f-fc9b8c584976" 
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="3f4f7a9f-b470-49c0-a80f-fc9b8c584976"
                 data-share-badge-host="https://www.credly.com"
               ></div>
-              <div 
-                data-iframe-width="150" 
-                data-iframe-height="270" 
-                data-share-badge-id="e0b6d724-15e4-473a-b8e8-ff22d50b7409" 
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="e0b6d724-15e4-473a-b8e8-ff22d50b7409"
                 data-share-badge-host="https://www.credly.com"
               ></div>
-              <div data-iframe-width="150" 
-                data-iframe-height="270" 
-                data-share-badge-id="81443fec-9e25-4199-af1d-24c0b3433fee" 
-                data-share-badge-host="https://www.credly.com">
-              </div>
-              <div data-iframe-width="150" 
-                data-iframe-height="270" 
-                data-share-badge-id="9d99b397-b635-4f45-84b4-4ac2da1b6746" 
-                data-share-badge-host="https://www.credly.com">
-              </div>
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="81443fec-9e25-4199-af1d-24c0b3433fee"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
+              <div
+                data-iframe-width="150"
+                data-iframe-height="270"
+                data-share-badge-id="9d99b397-b635-4f45-84b4-4ac2da1b6746"
+                data-share-badge-host="https://www.credly.com"
+              ></div>
 
               {/* Postman Certification */}
               <Card className="w-[150px] h-[270px] flex flex-col items-center justify-between p-4 bg-white dark:bg-secondary/10 border border-border/50">
                 <div className="flex-1 flex items-center justify-center w-full">
-                    <img 
-                        src="https://voyager.postman.com/logo/postman-logo-icon-orange.svg" 
-                        alt="Postman Student Expert" 
-                        className="w-20 h-20 object-contain"
-                    />
+                  <img
+                    src="https://voyager.postman.com/logo/postman-logo-icon-orange.svg"
+                    alt="Postman Student Expert"
+                    className="w-20 h-20 object-contain"
+                  />
                 </div>
                 <div className="text-center w-full">
-                    <h4 className="font-bold text-sm mb-1 leading-tight">Postman Student Expert</h4>
-                    <p className="text-xs text-muted-foreground mb-3">Postman</p>
-                    <Button variant="outline" size="sm" className="w-full text-xs h-8" asChild>
-                        <a href="https://www.linkedin.com/in/malvin-t-machingura/details/certifications/" target="_blank" rel="noopener noreferrer">
-                            Verify
-                        </a>
-                    </Button>
+                  <h4 className="font-bold text-sm mb-1 leading-tight">
+                    Postman Student Expert
+                  </h4>
+                  <p className="text-xs text-muted-foreground mb-3">Postman</p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full text-xs h-8"
+                    asChild
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/malvin-t-machingura/details/certifications/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Verify
+                    </a>
+                  </Button>
+                </div>
+              </Card>
+
+              {/* Udacity Certification */}
+              <Card className="w-[150px] h-[270px] flex flex-col items-center justify-between p-4 bg-white dark:bg-secondary/10 border border-border/50">
+                <div className="flex-1 flex items-center justify-center w-full">
+                  <img
+                    src="https://www.udacity.com/favicon.ico"
+                    alt="Udacity"
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
+                <div className="text-center w-full">
+                  <h4 className="font-bold text-sm mb-1 leading-tight">
+                    AWS AI Practitioner Challenge
+                  </h4>
+                  <p className="text-xs text-muted-foreground mb-3">Udacity</p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full text-xs h-8"
+                    asChild
+                  >
+                    <a
+                      href="https://www.udacity.com/certificate/e/ba775522-30a6-11f1-a56c-4b7a5d9528d1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Verify
+                    </a>
+                  </Button>
+                </div>
+              </Card>
+
+              {/* Frontend Masters Certification */}
+              <Card className="w-[150px] h-[270px] flex flex-col items-center justify-between p-4 bg-white dark:bg-secondary/10 border border-border/50">
+                <div className="flex-1 flex items-center justify-center w-full">
+                  <img
+                    src="https://frontendmasters.com/favicon-32x32.png"
+                    alt="Frontend Masters"
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
+                <div className="text-center w-full">
+                  <h4 className="font-bold text-sm mb-1 leading-tight">
+                    Complete Intro to React, v9
+                  </h4>
+                  <p className="text-xs text-muted-foreground mb-3">
+                    Frontend Masters
+                  </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full text-xs h-8"
+                    asChild
+                  >
+                    <a
+                      href="https://static.frontendmasters.com/ud/c/2fbade59af/hixpadIGiV/complete-react-v9.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Verify
+                    </a>
+                  </Button>
+                </div>
+              </Card>
+
+              {/* Microsoft Learn Certification */}
+              <Card className="w-[150px] h-[270px] flex flex-col items-center justify-between p-4 bg-white dark:bg-secondary/10 border border-border/50">
+                <div className="flex-1 flex items-center justify-center w-full">
+                  <img
+                    src="https://learn.microsoft.com/favicon.ico"
+                    alt="Microsoft Learn"
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
+                <div className="text-center w-full">
+                  <h4 className="font-bold text-sm mb-1 leading-tight">
+                    Microsoft Learn Credential
+                  </h4>
+                  <p className="text-xs text-muted-foreground mb-3">Microsoft</p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full text-xs h-8"
+                    asChild
+                  >
+                    <a
+                      href="https://learn.microsoft.com/api/credentials/share/en-us/sehmaluva/2DD7B16EDF8697AA?sharingId"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Verify
+                    </a>
+                  </Button>
                 </div>
               </Card>
             </div>
 
             <div className="mt-6 text-center sm:text-left">
-                 <Button variant="link" asChild className="text-muted-foreground hover:text-primary p-0">
-                  <a href="https://www.credly.com/users/sehmaluva/badges" target="_blank" rel="noopener noreferrer">
-                    View all on Credly <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
+              <Button
+                variant="link"
+                asChild
+                className="text-muted-foreground hover:text-primary p-0"
+              >
+                <a
+                  href="https://www.credly.com/users/sehmaluva/badges"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View all on Credly <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }

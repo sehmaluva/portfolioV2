@@ -19,6 +19,15 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Credit Risk Intelligence",
+    description:
+      "End-to-end Django + React platform that scores loan applications with explainable LightGBM models, SHAP insights, and portfolio analytics dashboards.",
+    image: "/weather-analytics-dashboard-with-charts.jpg",
+    tech: ["Python", "Django", "React", "TypeScript", "Machine Learning"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/credit-risk-intelligence",
+  },
+  {
     title: "Student Fest",
     description:
       "Beginner-friendly introduction to coding and open source experience with coding challenges & real world projects.",

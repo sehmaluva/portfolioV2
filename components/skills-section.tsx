@@ -4,10 +4,21 @@ import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { 
   Code, Database, Server, Layout, Globe, GitBranch, Cloud, 
-  Box, Workflow, Hash, Github, Terminal
+  Box, Workflow, Hash, Github, Terminal, Brain, Cpu, Sparkles, Bot
 } from "lucide-react"
 
 const skillCategories = [
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      { name: "Machine Learning", icon: Brain },
+      { name: "Deep Learning", icon: Cpu },
+      { name: "LLMs & GenAI", icon: Sparkles },
+      { name: "Computer Vision", icon: Bot },
+      { name: "PyTorch & Scikit", icon: Code },
+      { name: "Prompt Eng.", icon: Workflow },
+    ],
+  },
   {
     title: "Frontend",
     skills: [
@@ -61,7 +72,7 @@ export function SkillsSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
