@@ -38,6 +38,10 @@ const personSchema = {
     "Machine Learning",
     "Deep Learning",
     "LLMs & GenAI",
+    "AI Safety",
+    "Jailbreak Evaluation",
+    "Low-resource Languages",
+    "Shona",
     "Python",
     "Django",
     "React",
@@ -53,6 +57,7 @@ const personSchema = {
     "https://www.linkedin.com/in/malvin-t-machingura",
     "https://www.credly.com/users/sehmaluva/badges",
     "https://holopin.io/@sehmaluva",
+    "https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
   ],
 };
 
@@ -85,7 +90,7 @@ const faqSchema = {
       name: "What does Malvin Machingura specialize in?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "He specializes in building scalable applications with Python, Django, React, Next.js, and TypeScript, plus AI/ML work including model training, LLMs, GenAI, Deep Learning, and explainable ML systems such as credit risk scoring.",
+        text: "He specializes in building scalable applications with Python, Django, React, Next.js, and TypeScript, plus AI/ML work including model training, LLMs, GenAI, Deep Learning, explainable ML systems such as credit risk scoring, and AI safety research for low-resource languages like Shona.",
       },
     },
     {
@@ -112,6 +117,50 @@ const faqSchema = {
         text: "Notable projects include Credit Risk Intelligence (Django + React explainable ML loan scoring), GitWrapped (GitHub contributions visualization), Student Fest (open-source coding challenges), and his personal portfolio at sehmaluva.me.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Has Malvin Machingura published AI research?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Malvin T. Machingura authored AfroJailbreak-ZW: Evaluating Jailbreak Resistance in Shona, a pilot study with Apart Research (June 2026) comparing jailbreak resistance of ChatGPT and Gemini in English, Shona, and Shona-English code-switched prompts. Read it at https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
+      },
+    },
+  ],
+};
+
+const researchSchema = {
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id":
+    "https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
+  name: "AfroJailbreak-ZW: Evaluating Jailbreak Resistance in Shona",
+  headline: "AfroJailbreak-ZW: Evaluating Jailbreak Resistance in Shona",
+  url: "https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
+  datePublished: "2026-06-21",
+  author: {
+    "@id": `${siteUrl}/#person`,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Apart Research",
+    url: "https://apartresearch.com",
+  },
+  description:
+    "A pilot study testing whether ChatGPT and Gemini are easier to jailbreak in Shona than in English, including Shona-English code-switched prompts and a Language Vulnerability Index for low-resource language AI safety.",
+  keywords: [
+    "AI safety",
+    "jailbreak",
+    "Shona",
+    "low-resource languages",
+    "LLM evaluation",
+    "Global South",
+    "Zimbabwe",
+  ],
+  about: [
+    "AI Safety",
+    "Jailbreak Resistance",
+    "Shona Language",
+    "Large Language Models",
   ],
 };
 
@@ -160,7 +209,7 @@ const projectsSchema = {
 };
 
 export function JsonLd() {
-  const schemas = [personSchema, websiteSchema, faqSchema, projectsSchema];
+  const schemas = [personSchema, websiteSchema, faqSchema, researchSchema, projectsSchema];
 
   return (
     <>

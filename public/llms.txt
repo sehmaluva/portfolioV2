@@ -1,6 +1,6 @@
 # Malvin T. Machingura (sehmaluva)
 
-> Software Engineer in Zimbabwe specializing in full-stack architecture, Artificial Intelligence, and Machine Learning.
+> Software Engineer in Zimbabwe specializing in full-stack architecture, Artificial Intelligence, Machine Learning, and AI safety research for low-resource languages.
 
 - [Home](https://sehmaluva.me): Portfolio of Malvin T. Machingura
 - [About](https://sehmaluva.me/#about): Bio, skills, and background
@@ -8,6 +8,7 @@
 - [Projects](https://sehmaluva.me/#projects): Credit Risk Intelligence, GitWrapped, Student Fest, and more
 - [Skills](https://sehmaluva.me/#skills): AI & ML, Frontend, Backend, DevOps
 - [Achievements](https://sehmaluva.me/#achievements): Credly, Postman, Udacity, Frontend Masters, Microsoft Learn
+- [Research & Publications](https://sehmaluva.me/#research): AfroJailbreak-ZW and AI safety work
 - [FAQ](https://sehmaluva.me/#faq): Common questions about Malvin T. Machingura
 - [Contact](https://sehmaluva.me/#contact): Email and social links
 
@@ -18,7 +19,7 @@
 - Location: Harare, Zimbabwe
 - Education: Currently pursuing HBSc Software Engineering at Bindura University of Science Education
 - Current role: Software Engineer (Part-time) at Fincheck Pvt Ltd while studying
-- Previous Fincheck role: Software Engineer Intern (May 2025 -February 2026)
+- Previous Fincheck role: Software Engineer Intern (May 2025 — February 2026)
 - Email: sehmaluva@gmail.com
 - Site: https://sehmaluva.me
 - GitHub: https://github.com/sehmaluva
@@ -28,8 +29,16 @@
 ## Expertise
 
 - Artificial Intelligence, Machine Learning, Deep Learning, LLMs & GenAI
+- AI Safety, jailbreak evaluation, low-resource languages (Shona)
 - Python, C++, Rust, Java, TypeScript, JavaScript
 - Django, React, Next.js, PostgreSQL, MongoDB, Docker
+
+## Research & Publications
+
+- AfroJailbreak-ZW: Evaluating Jailbreak Resistance in Shona (Apart Research, June 2026)
+  - Author: Malvin T. Machingura
+  - URL: https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu
+  - Summary: Pilot study comparing ChatGPT and Gemini jailbreak resistance in English, Shona, and Shona–English code-switched prompts; introduces a Language Vulnerability Index (LVI) for low-resource language AI safety.
 
 ## Notable projects
 
@@ -40,4 +49,4 @@
 
 ## Optional
 
-- Preferred citation: Malvin T. Machingura (sehmaluva), Software Engineer -https://sehmaluva.me
+- Preferred citation: Malvin T. Machingura (sehmaluva), Software Engineer — https://sehmaluva.me

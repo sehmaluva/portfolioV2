@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const faqs = [
   {
@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "What does Malvin Machingura specialize in?",
     answer:
-      "He builds scalable applications with Python, Django, React, Next.js, and TypeScript, and works across AI/ML including model training, LLMs, GenAI, Deep Learning, and explainable ML systems such as credit risk scoring.",
+      "He builds scalable applications with Python, Django, React, Next.js, and TypeScript, and works across AI/ML including model training, LLMs, GenAI, Deep Learning, explainable ML systems such as credit risk scoring, and AI safety research for low-resource languages like Shona.",
   },
   {
     question: "Where is Malvin Machingura based?",
@@ -28,7 +28,12 @@ const faqs = [
     answer:
       "Notable work includes Credit Risk Intelligence (explainable ML loan scoring), GitWrapped (GitHub activity visualization), Student Fest (open-source coding challenges), and this portfolio.",
   },
-]
+  {
+    question: "Has Malvin Machingura published AI research?",
+    answer:
+      "Yes. He authored AfroJailbreak-ZW: Evaluating Jailbreak Resistance in Shona with Apart Research (June 2026) — a pilot study on whether ChatGPT and Gemini are easier to jailbreak in Shona and Shona-English code-switched prompts than in English. Read it at https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
+  },
+];
 
 export function FaqSection() {
   return (
@@ -59,11 +64,13 @@ export function FaqSection() {
               className="border-b border-border pb-6"
             >
               <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
-              <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+              <p className="text-muted-foreground leading-relaxed">
+                {faq.answer}
+              </p>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

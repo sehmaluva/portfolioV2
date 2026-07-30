@@ -3,6 +3,7 @@ import { AboutSection } from "@/components/about-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { SkillsSection } from "@/components/skills-section"
 import { AchievementsSection } from "@/components/achievements-section"
+import { ResearchSection } from "@/components/research-section"
 import { FaqSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import { Navigation } from "@/components/navigation"
@@ -20,6 +21,7 @@ export default function Home() {
       <ProjectsSection />
       <SkillsSection />
       <AchievementsSection />
+      <ResearchSection />
       <FaqSection />
       <ContactSection />
 
@@ -31,4 +33,5 @@ export default function Home() {
     </main>
   )
 }
+
 
