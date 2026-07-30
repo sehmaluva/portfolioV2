@@ -55,6 +55,7 @@ const personSchema = {
   sameAs: [
     "https://github.com/sehmaluva",
     "https://www.linkedin.com/in/malvin-t-machingura",
+    "https://builder.aws.com/community/@sehmaluva",
     "https://www.credly.com/users/sehmaluva/badges",
     "https://holopin.io/@sehmaluva",
     "https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
@@ -106,7 +107,7 @@ const faqSchema = {
       name: "How can I contact Malvin Machingura?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can email sehmaluva@gmail.com, visit https://sehmaluva.me/#contact, or connect via LinkedIn at https://www.linkedin.com/in/malvin-t-machingura and GitHub at https://github.com/sehmaluva.",
+        text: "You can email sehmaluva@gmail.com, visit https://sehmaluva.me/#contact, or connect via LinkedIn at https://www.linkedin.com/in/malvin-t-machingura, GitHub at https://github.com/sehmaluva, and AWS Builder Community at https://builder.aws.com/community/@sehmaluva.",
       },
     },
     {

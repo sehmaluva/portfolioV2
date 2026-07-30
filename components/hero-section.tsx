@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Cloud, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function HeroSection() {
@@ -96,6 +96,21 @@ export function HeroSection() {
                 >
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
+                </Button>
+              </a>
+              <a
+                href="https://builder.aws.com/community/@sehmaluva"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="AWS Builder Community"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:text-primary transition-colors"
+                >
+                  <Cloud className="h-5 w-5" />
+                  <span className="sr-only">AWS Builder Community</span>
                 </Button>
               </a>
               <a href="mailto:sehmaluva@gmail.com" aria-label="Email">

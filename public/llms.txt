@@ -24,6 +24,7 @@
 - Site: https://sehmaluva.me
 - GitHub: https://github.com/sehmaluva
 - LinkedIn: https://www.linkedin.com/in/malvin-t-machingura
+- AWS Builder Community: https://builder.aws.com/community/@sehmaluva
 - Credly: https://www.credly.com/users/sehmaluva/badges
 
 ## Expertise

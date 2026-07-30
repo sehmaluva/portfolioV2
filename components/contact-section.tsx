@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Github, Linkedin, Mail, MapPin } from "lucide-react"
+import { Cloud, Github, Linkedin, Mail, MapPin } from "lucide-react"
 import { useState } from "react"
 
 type FormStatus = "idle" | "loading" | "success" | "error"
@@ -230,6 +230,26 @@ export function ContactSection() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <Cloud className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <a
+                    className="font-medium"
+                    href="https://builder.aws.com/community/@sehmaluva"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    AWS Builder Community
+                  </a>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
+                whileHover={{ x: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
                 <div>
@@ -272,6 +292,22 @@ export function ContactSection() {
                   >
                     <Linkedin className="h-5 w-5" />
                     <span className="sr-only">LinkedIn</span>
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="icon"
+                  className="hover:bg-primary hover:text-primary-foreground transition-colors bg-transparent"
+                >
+                  <a
+                    href="https://builder.aws.com/community/@sehmaluva"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="AWS Builder Community"
+                  >
+                    <Cloud className="h-5 w-5" />
+                    <span className="sr-only">AWS Builder Community</span>
                   </a>
                 </Button>
                 <Button
