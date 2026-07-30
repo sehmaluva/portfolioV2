@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card } from "@/components/ui/card"
-import Image from 'next/image';
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 const skills = [
   "Artificial Intelligence",
@@ -28,38 +28,38 @@ const skills = [
   "TypeScript",
   "React",
   "Next.js",
-]
+];
 
 const timeline = [
   {
-    year: "March 2026 — Current",
-    title: "Software Engineer",
-    company: "Credisafe",
+    year: "2023 -Current",
+    title: "HBSc Software Engineering Student",
+    company: "Bindura University of Science Education",
     description:
-      "Developing a full-stack platform using Django and React. Implementing features, optimizing performance, and ensuring security and reliability",
+      "Currently studying software engineering with a focus on AI algorithms, data science, web development, database management, software architecture, DSA, and operating systems",
   },
   {
-    year: "May 2025 — February 2026",
+    year: "March 2026 -Current",
+    title: "Software Engineer (Part-time)",
+    company: "Fincheck Pvt Ltd",
+    description:
+      "Continuing at Fincheck part-time while studying: developing company projects, implementing features, database management, and DevOps",
+  },
+  {
+    year: "May 2025 -February 2026",
     title: "Software Engineer Intern",
     company: "Fincheck Pvt Ltd",
     description:
-      "Assisted in the development of the Company projects, fixing bugs, Implementing new features, Database management and DevOps",
+      "Assisted in the development of company projects, fixing bugs, implementing new features, database management, and DevOps",
   },
   {
-    year: " March 2025 — May 2025",
+    year: "March 2025 -May 2025",
     title: "IT Intern",
     company: "Chitungwiza Municipality",
     description:
       "Assisted in the maintenance of internal tools and applications. Collaborated with the IT team to troubleshoot and resolve technical issues.",
   },
-  {
-    year: "2023 — Current",
-    title: "HBSc Software Engineering Student",
-    company: "Bindura University of Science Education",
-    description:
-      "Studying software engineering with a focus on AI algorithms, data science, web development, database management, software architecture, DSA, and operating systems",
-  },
-]
+];
 
 export function AboutSection() {
   return (
@@ -86,20 +86,28 @@ export function AboutSection() {
             <div className="relative mb-8">
               <div className="w-64 h-64 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-1">
                 <div className="w-full h-full rounded-2xl bg-card flex items-center justify-center">
-                    <Image
+                  <Image
                     src="/profile.png"
-                    alt="Profile Picture"
+                    alt="Malvin T. Machingura, Software Engineering Student"
                     width={256}
                     height={256}
                     className="rounded-2xl object-cover"
                     priority
-                    />
+                  />
                 </div>
               </div>
             </div>
 
             <p className="text-lg text-muted-foreground mb-6 text-pretty leading-relaxed">
-              I'm a Software Engineer specializing in full-stack architecture, Artificial Intelligence, and Machine Learning solutions. I design and build scalable, user-focused applications using Python, C++, Rust, Django, and modern web frameworks. My expertise spans model training, intelligent automation, RESTful APIs, database optimization, and end-to-end production delivery.
+              I'm a Software Engineering student and part-time Software Engineer
+              specializing in full-stack architecture, Artificial Intelligence,
+              and Machine Learning solutions. I currently study at Bindura
+              University of Science Education and work part-time at Fincheck Pvt
+              Ltd (after previously completing an internship there). I design
+              and build scalable, user-focused applications using Python, C++,
+              Rust, Django, and modern web frameworks. My expertise spans model
+              training, intelligent automation, RESTful APIs, database
+              optimization, and end-to-end production delivery.
             </p>
 
             <div className="flex flex-wrap gap-2">
@@ -119,11 +127,12 @@ export function AboutSection() {
           </motion.div>
 
           <motion.div
+            id="experience"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 scroll-mt-24"
           >
             <h3 className="text-2xl font-semibold mb-8">Experience Timeline</h3>
             {timeline.map((item, index) => (
@@ -138,10 +147,18 @@ export function AboutSection() {
                   <div className="flex items-start gap-4">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <div>
-                      <p className="text-sm text-primary font-medium mb-1">{item.year}</p>
-                      <h4 className="font-semibold text-lg mb-1">{item.title}</h4>
-                      <p className="text-accent font-medium mb-2">{item.company}</p>
-                      <p className="text-muted-foreground text-sm">{item.description}</p>
+                      <p className="text-sm text-primary font-medium mb-1">
+                        {item.year}
+                      </p>
+                      <h4 className="font-semibold text-lg mb-1">
+                        {item.title}
+                      </h4>
+                      <p className="text-accent font-medium mb-2">
+                        {item.company}
+                      </p>
+                      <p className="text-muted-foreground text-sm">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 </Card>
@@ -151,5 +168,5 @@ export function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

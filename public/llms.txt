@@ -1,0 +1,43 @@
+# Malvin T. Machingura (sehmaluva)
+
+> Software Engineer in Zimbabwe specializing in full-stack architecture, Artificial Intelligence, and Machine Learning.
+
+- [Home](https://sehmaluva.me): Portfolio of Malvin T. Machingura
+- [About](https://sehmaluva.me/#about): Bio, skills, and background
+- [Experience](https://sehmaluva.me/#experience): Fincheck (intern, then part-time), Chitungwiza Municipality, BUSE
+- [Projects](https://sehmaluva.me/#projects): Credit Risk Intelligence, GitWrapped, Student Fest, and more
+- [Skills](https://sehmaluva.me/#skills): AI & ML, Frontend, Backend, DevOps
+- [Achievements](https://sehmaluva.me/#achievements): Credly, Postman, Udacity, Frontend Masters, Microsoft Learn
+- [FAQ](https://sehmaluva.me/#faq): Common questions about Malvin T. Machingura
+- [Contact](https://sehmaluva.me/#contact): Email and social links
+
+## Identity
+
+- Name: Malvin T. Machingura (Malvin Tinotenda Machingura; also known as sehmaluva)
+- Role: Software Engineering Student & Part-time Software Engineer
+- Location: Harare, Zimbabwe
+- Education: Currently pursuing HBSc Software Engineering at Bindura University of Science Education
+- Current role: Software Engineer (Part-time) at Fincheck Pvt Ltd while studying
+- Previous Fincheck role: Software Engineer Intern (May 2025 -February 2026)
+- Email: sehmaluva@gmail.com
+- Site: https://sehmaluva.me
+- GitHub: https://github.com/sehmaluva
+- LinkedIn: https://www.linkedin.com/in/malvin-t-machingura
+- Credly: https://www.credly.com/users/sehmaluva/badges
+
+## Expertise
+
+- Artificial Intelligence, Machine Learning, Deep Learning, LLMs & GenAI
+- Python, C++, Rust, Java, TypeScript, JavaScript
+- Django, React, Next.js, PostgreSQL, MongoDB, Docker
+
+## Notable projects
+
+- Credit Risk Intelligence: https://github.com/sehmaluva/credit-risk-intelligence
+- GitWrapped: https://gitwrapped.sehmaluva.me
+- Student Fest: https://sehmaluva.github.io/student-fest
+- Portfolio: https://sehmaluva.me
+
+## Optional
+
+- Preferred citation: Malvin T. Machingura (sehmaluva), Software Engineer -https://sehmaluva.me

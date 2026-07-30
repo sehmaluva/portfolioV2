@@ -8,6 +8,8 @@ const navItems = [
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
+  { name: "Achievements", href: "#achievements" },
+  { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
 ]
 
@@ -42,6 +44,7 @@ export function Navigation() {
             <li key={item.name}>
               <a
                 href={item.href}
+                aria-label={item.name}
                 className={cn(
                   "block w-3 h-3 rounded-full border-2 transition-all duration-300 hover:scale-125",
                   activeSection === item.href.slice(1)

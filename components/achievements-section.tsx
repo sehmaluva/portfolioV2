@@ -79,30 +79,47 @@ export function AchievementsSection() {
               Certifications
             </h3>
 
+            <div className="mb-4 space-y-1 text-sm text-muted-foreground">
+              <p>
+                Credly certifications: Python Essentials 1 (Cisco), Introduction
+                to Cybersecurity (Cisco), MongoDB Indexing Design Fundamentals,
+                MongoDB Aggregation Fundamentals.
+              </p>
+              <p>
+                Also certified in Postman Student Expert, Udacity AWS AI
+                Practitioner Challenge, Frontend Masters Complete Intro to React
+                v9, and Microsoft Learn.
+              </p>
+            </div>
+
             <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
               <div
                 data-iframe-width="150"
                 data-iframe-height="270"
                 data-share-badge-id="3f4f7a9f-b470-49c0-a80f-fc9b8c584976"
                 data-share-badge-host="https://www.credly.com"
+                title="Python Essentials 1 -Cisco"
               ></div>
               <div
                 data-iframe-width="150"
                 data-iframe-height="270"
                 data-share-badge-id="e0b6d724-15e4-473a-b8e8-ff22d50b7409"
                 data-share-badge-host="https://www.credly.com"
+                title="Introduction to Cybersecurity -Cisco"
               ></div>
               <div
                 data-iframe-width="150"
                 data-iframe-height="270"
                 data-share-badge-id="81443fec-9e25-4199-af1d-24c0b3433fee"
                 data-share-badge-host="https://www.credly.com"
+                title="MongoDB Indexing Design Fundamentals -MongoDB"
               ></div>
               <div
                 data-iframe-width="150"
                 data-iframe-height="270"
                 data-share-badge-id="9d99b397-b635-4f45-84b4-4ac2da1b6746"
                 data-share-badge-host="https://www.credly.com"
+                title="MongoDB Aggregation Fundamentals -MongoDB"
               ></div>
 
               {/* Postman Certification */}
@@ -213,7 +230,9 @@ export function AchievementsSection() {
                   <h4 className="font-bold text-sm mb-1 leading-tight">
                     Microsoft Learn Credential
                   </h4>
-                  <p className="text-xs text-muted-foreground mb-3">Microsoft</p>
+                  <p className="text-xs text-muted-foreground mb-3">
+                    Microsoft
+                  </p>
                   <Button
                     variant="outline"
                     size="sm"

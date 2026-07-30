@@ -7,55 +7,57 @@ import "./globals.css"
 import { Suspense } from "react"
 import MatrixWrapper from "../components/matrix-wrapper"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { JsonLd } from "@/components/json-ld"
 
 const siteUrl = "https://sehmaluva.me"
+
 export const metadata: Metadata = {
-  title: "Malvin Machingura (sehmaluva)| Software Engineer",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Malvin T. Machingura (sehmaluva) | Software Engineer",
+    template: "%s | Malvin T. Machingura",
+  },
   description:
-    "I am Malvin Machingura , a Software Engineer, specializing in building scalable software applications, AI and Machine Learning solutions. Passionate about open-source, collaboration, and crafting beautiful digital experiences.",
+    "Malvin T. Machingura (Tinotenda) is a Software Engineering student and part-time Software Engineer specializing in full-stack architecture, Artificial Intelligence, and Machine Learning. Building scalable applications with Python, Django, React, and modern web frameworks.",
   keywords: [
+    "Malvin T. Machingura",
     "Malvin Machingura",
-    "Full-Stack Software Engineer",
-    "Software Developer Zimbabwe",
-    "Bindura University of Science Education",
-    "BUSE",
-    "Harare Developer",
-    "Zimbabwe Software Engineer",
-    "Africa Tech Talent",
-    "Portfolio Website",
-    "API Development",
+    "Malvin Tinotenda Machingura",
     "sehmaluva",
-    "malvin",
-    "seh maluva",
-    "seh",
-    "maluva",
-    "malvin-machingura",
-    "malvin t machingura",
-    "malvin t.",
-    "machingura",
-    "malvin machingura",
+    "Software Engineer Zimbabwe",
+    "Full-Stack Developer",
+    "Machine Learning Engineer",
+    "AI Developer",
+    "Django",
+    "React",
+    "Next.js",
+    "Python",
+    "Harare",
+    "Bindura University of Science Education",
   ],
+  authors: [{ name: "Malvin T. Machingura", url: siteUrl }],
+  creator: "Malvin T. Machingura",
+  publisher: "Malvin T. Machingura",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/icon.svg",
   },
-  authors: [{ name: "Malvin Machingura", url: siteUrl }],
-  creator: "Malvin Machingura",
   openGraph: {
-    title: "Malvin Machingura (sehmaluva)| Software Engineer",
+    title: "Malvin T. Machingura (sehmaluva) | Software Engineer",
     description:
-      "Explore Malvin Machingura’s portfolio. Software Engineer | Building Real-World Solutions. Open to global collaboration and tech partnerships.",
+      "Software Engineering student and part-time Software Engineer specializing in full-stack, AI, and Machine Learning. Open to global collaboration.",
     url: siteUrl,
-    siteName: "Malvin Machingura Portfolio",
-    images: [
-      {
-        url: `${siteUrl}/profile.png`,
-        width: 1200,
-        height: 630,
-        alt: "Malvin Machingura",
-      },
-    ],
+    siteName: "Malvin T. Machingura Portfolio",
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Malvin T. Machingura (sehmaluva) | Software Engineer",
+    description:
+      "Software Engineering student and part-time Software Engineer specializing in full-stack, AI, and Machine Learning. Open to global collaboration.",
   },
   robots: {
     index: true,
@@ -68,15 +70,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Malvin Machingura (sehmaluva)| Software Engineer",
-    description:
-      "Explore Malvin Machingura’s (sehmaluva) portfolio. Software Engineer | Building Real-World Applicaion Solutions. Open to global collaboration and tech partnerships.",
-    images: [`${siteUrl}/profile.png`],
-  },
 }
-
 
 export default function RootLayout({
   children,
@@ -86,6 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+        <JsonLd />
         <MatrixWrapper />
         <Suspense>
           {children}

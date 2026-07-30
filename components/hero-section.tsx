@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
-import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
@@ -17,10 +17,16 @@ export function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-            <span className="block text-muted-foreground text-lg md:text-xl font-normal mb-4">Hello World!</span>
-            I'm Malvin
+            <span className="block text-muted-foreground text-lg md:text-xl font-normal mb-4">
+              Hello World!
+            </span>
+            Malvin T. Machingura
           </h1>
 
           <motion.h2
@@ -29,7 +35,7 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            A Professional Problem Solver
+            Software Engineering Student · AI & Full-Stack
           </motion.h2>
 
           <motion.p
@@ -38,8 +44,9 @@ export function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-           Software Engineer exploring the full stack of digital innovation from AI and cybersecurity to mobile and web development.
-           With a strong foundation in languages including Java, Python, Rust, and C++.
+            Currently studying Software Engineering at BUSE while building
+            scalable applications and intelligent systems part-time -from APIs
+            and dashboards to explainable AI.
           </motion.p>
 
           <motion.div
@@ -51,14 +58,27 @@ export function HeroSection() {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg animate-glow"
-              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               View Projects
             </Button>
 
             <div className="flex gap-4">
-              <a href="https://github.com/sehmaluva" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+              <a
+                href="https://github.com/sehmaluva"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:text-primary transition-colors"
+                >
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Button>
@@ -69,13 +89,21 @@ export function HeroSection() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:text-primary transition-colors"
+                >
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </a>
               <a href="mailto:sehmaluva@gmail.com" aria-label="Email">
-                <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:text-primary transition-colors"
+                >
                   <Mail className="h-5 w-5" />
                   <span className="sr-only">Email</span>
                 </Button>
@@ -94,5 +122,5 @@ export function HeroSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
