@@ -22,8 +22,8 @@ export default function Home() {
       <SkillsSection />
       <AchievementsSection />
       <ResearchSection />
-      <FaqSection />
       <ContactSection />
+      <FaqSection />
 
       <footer className="py-8 px-6 border-t border-border">
         <div className="container mx-auto text-center">

@@ -9,8 +9,8 @@
 - [Skills](https://sehmaluva.me/#skills): AI & ML, Frontend, Backend, DevOps
 - [Achievements](https://sehmaluva.me/#achievements): Credly, Postman, Udacity, Frontend Masters, Microsoft Learn
 - [Research & Publications](https://sehmaluva.me/#research): AfroJailbreak-ZW and AI safety work
-- [FAQ](https://sehmaluva.me/#faq): Common questions about Malvin T. Machingura
 - [Contact](https://sehmaluva.me/#contact): Email and social links
+- [FAQ](https://sehmaluva.me/#faq): Common questions about Malvin T. Machingura
 
 ## Identity
 

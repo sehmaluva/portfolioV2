@@ -10,8 +10,8 @@ const navItems = [
   { name: "Skills", href: "#skills" },
   { name: "Achievements", href: "#achievements" },
   { name: "Research & Publications", href: "#research" },
-  { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
+  { name: "FAQ", href: "#faq" },
 ]
 
 export function Navigation() {
