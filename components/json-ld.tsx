@@ -38,6 +38,7 @@ const personSchema = {
     "Machine Learning",
     "Deep Learning",
     "LLMs & GenAI",
+    "NLP",
     "AI Safety",
     "Jailbreak Evaluation",
     "Low-resource Languages",

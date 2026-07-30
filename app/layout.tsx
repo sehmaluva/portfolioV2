@@ -1,13 +1,24 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
+import { Fraunces, Outfit } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
-import MatrixWrapper from "../components/matrix-wrapper"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { JsonLd } from "@/components/json-ld"
+import { ThemeProvider } from "@/components/theme-provider"
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  display: "swap",
+})
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+})
 
 const siteUrl = "https://sehmaluva.me"
 
@@ -38,12 +49,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Malvin T. Machingura", url: siteUrl }],
   creator: "Malvin T. Machingura",
   publisher: "Malvin T. Machingura",
-  alternates: {
-    canonical: "/",
-  },
-  icons: {
-    icon: "/icon.svg",
-  },
+  alternates: { canonical: "/" },
+  icons: { icon: "/icon.svg" },
   openGraph: {
     title: "Malvin T. Machingura (sehmaluva) | Software Engineer",
     description:
@@ -78,15 +85,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-        <JsonLd />
-        <MatrixWrapper />
-        <Suspense>
-          {children}
-          <SpeedInsights />
-          <Analytics />
-        </Suspense>
+    <html lang="en" className={`${outfit.variable} ${fraunces.variable}`} suppressHydrationWarning>
+      <body className={`${outfit.className} antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <JsonLd />
+          <Suspense>
+            {children}
+            <SpeedInsights />
+            <Analytics />
+          </Suspense>
+        </ThemeProvider>
       </body>
     </html>
   )

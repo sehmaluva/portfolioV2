@@ -1,141 +1,101 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { ArrowDown, Cloud, Github, Linkedin, Mail } from "lucide-react";
-import { motion } from "framer-motion";
+import { Cloud, Github, Linkedin, Mail, ArrowDown } from "lucide-react"
+import { motion } from "framer-motion"
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/30 rounded-full blur-3xl animate-float" />
-        <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float"
-          style={{ animationDelay: "1s" }}
-        />
+    <section className="relative min-h-[90vh] flex items-end md:items-center px-6 pt-28 pb-16 md:pb-24 overflow-hidden">
+      <div
+        className="pointer-events-none absolute inset-0 -z-10"
+        aria-hidden
+      >
+        <div className="absolute top-24 right-[-10%] h-[420px] w-[420px] rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute bottom-10 left-[-5%] h-[320px] w-[320px] rounded-full bg-accent/10 blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
+      <div className="container mx-auto max-w-5xl">
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          className="section-kicker mb-4"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-            <span className="block text-muted-foreground text-lg md:text-xl font-normal mb-4">
-              Hello World!
-            </span>
-            Malvin T. Machingura
-          </h1>
+          Software Engineering Student · Harare
+        </motion.p>
 
-          <motion.h2
-            className="text-2xl md:text-4xl font-semibold mb-6 text-primary"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.08 }}
+          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-foreground text-balance leading-[1.05] mb-6"
+        >
+          Malvin T. Machingura
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.16 }}
+          className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10"
+        >
+          Building clear, scalable software and intelligent systems — full-stack,
+          AI/ML, and research for real-world use.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.24 }}
+          className="flex flex-col sm:flex-row sm:items-center gap-4"
+        >
+          <button
+            type="button"
+            onClick={() =>
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-sm font-medium text-primary-foreground shadow-lg shadow-primary/20 hover:opacity-95 transition-opacity"
           >
-            Software Engineering Student · AI & Full-Stack
-          </motion.h2>
-
-          <motion.p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 text-pretty"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-          >
-            Currently studying Software Engineering at BUSE while building
-            scalable applications and intelligent systems part-time -from APIs
-            and dashboards to explainable AI.
-          </motion.p>
-
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.8 }}
-          >
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg animate-glow"
-              onClick={() =>
-                document
-                  .getElementById("projects")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              View Projects
-            </Button>
-
-            <div className="flex gap-4">
+            View projects
+          </button>
+          <div className="flex items-center gap-2">
+            {[
+              { href: "https://github.com/sehmaluva", icon: Github, label: "GitHub" },
+              {
+                href: "https://www.linkedin.com/in/malvin-t-machingura",
+                icon: Linkedin,
+                label: "LinkedIn",
+              },
+              {
+                href: "https://builder.aws.com/community/@sehmaluva",
+                icon: Cloud,
+                label: "AWS",
+              },
+              { href: "mailto:sehmaluva@gmail.com", icon: Mail, label: "Email" },
+            ].map((s) => (
               <a
-                href="https://github.com/sehmaluva"
-                target="_blank"
+                key={s.label}
+                href={s.href}
+                target={s.href.startsWith("mailto") ? undefined : "_blank"}
                 rel="noopener noreferrer"
-                aria-label="GitHub"
+                aria-label={s.label}
+                className="inline-flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground hover:border-primary hover:text-primary transition-colors shadow-sm"
               >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:text-primary transition-colors"
-                >
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">GitHub</span>
-                </Button>
+                <s.icon className="h-4 w-4" />
               </a>
-              <a
-                href="https://www.linkedin.com/in/malvin-t-machingura"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:text-primary transition-colors"
-                >
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Button>
-              </a>
-              <a
-                href="https://builder.aws.com/community/@sehmaluva"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="AWS Builder Community"
-              >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:text-primary transition-colors"
-                >
-                  <Cloud className="h-5 w-5" />
-                  <span className="sr-only">AWS Builder Community</span>
-                </Button>
-              </a>
-              <a href="mailto:sehmaluva@gmail.com" aria-label="Email">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:text-primary transition-colors"
-                >
-                  <Mail className="h-5 w-5" />
-                  <span className="sr-only">Email</span>
-                </Button>
-              </a>
-            </div>
-          </motion.div>
+            ))}
+          </div>
         </motion.div>
 
         <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
+          transition={{ delay: 0.5 }}
+          className="mt-16 hidden md:flex items-center gap-2 text-sm text-muted-foreground"
         >
-          <ArrowDown className="h-6 w-6 animate-bounce text-muted-foreground" />
+          <ArrowDown className="h-4 w-4 animate-bounce" />
+          Scroll to explore
         </motion.div>
       </div>
     </section>
-  );
+  )
 }

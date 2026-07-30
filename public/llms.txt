@@ -29,7 +29,7 @@
 
 ## Expertise
 
-- Artificial Intelligence, Machine Learning, Deep Learning, LLMs & GenAI
+- Artificial Intelligence, Machine Learning, Deep Learning, LLMs & GenAI, NLP
 - AI Safety, jailbreak evaluation, low-resource languages (Shona)
 - Python, C++, Rust, Java, TypeScript, JavaScript
 - Django, React, Next.js, PostgreSQL, MongoDB, Docker

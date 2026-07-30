@@ -1,24 +1,14 @@
 "use client"
 
 import type React from "react"
-
 import { motion } from "framer-motion"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
 import { Cloud, Github, Linkedin, Mail, MapPin } from "lucide-react"
 import { useState } from "react"
 
 type FormStatus = "idle" | "loading" | "success" | "error"
 
 export function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" })
   const [status, setStatus] = useState<FormStatus>("idle")
   const [errorMessage, setErrorMessage] = useState("")
 
@@ -30,17 +20,16 @@ export function ContactSection() {
     const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
     if (!accessKey || accessKey === "your_access_key_here") {
       setStatus("error")
-      setErrorMessage("Contact form is not configured yet. Please email sehmaluva@gmail.com instead.")
+      setErrorMessage(
+        "Contact form is not configured yet. Please email sehmaluva@gmail.com instead.",
+      )
       return
     }
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: accessKey,
           subject: `Portfolio contact from ${formData.name}`,
@@ -50,283 +39,186 @@ export function ContactSection() {
           message: formData.message,
         }),
       })
-
       const result = await response.json()
       if (!response.ok || !result.success) {
         throw new Error(result.message || "Failed to send message")
       }
-
       setStatus("success")
       setFormData({ name: "", email: "", message: "" })
     } catch (error) {
       setStatus("error")
       setErrorMessage(
-        error instanceof Error ? error.message : "Something went wrong. Please try again or email me directly.",
+        error instanceof Error
+          ? error.message
+          : "Something went wrong. Please try again or email me directly.",
       )
     }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }))
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
+  const fieldClass =
+    "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary disabled:opacity-50"
+
   return (
-    <section id="contact" className="py-20 px-6 bg-muted/30">
+    <section id="contact" className="py-24 px-6 scroll-mt-20">
       <div className="container mx-auto max-w-6xl">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-12 max-w-xl"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8" />
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together to
-            bring your ideas to life.
+          <p className="section-kicker mb-3">Contact</p>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight mb-3">
+            Let&apos;s talk
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Open to collaboration, roles, and interesting problems.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-6">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="depth-card p-6 md:p-8"
           >
-            <Card className="p-8">
-              <h3 className="text-2xl font-semibold mb-6">Send me a message</h3>
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your name"
-                    required
-                    disabled={status === "loading"}
-                    className="transition-all duration-300 focus:ring-2 focus:ring-primary/20"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="your.email@example.com"
-                    required
-                    disabled={status === "loading"}
-                    className="transition-all duration-300 focus:ring-2 focus:ring-primary/20"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Feel free to reach out..."
-                    rows={5}
-                    required
-                    disabled={status === "loading"}
-                    className="transition-all duration-300 focus:ring-2 focus:ring-primary/20"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
+            <h3 className="font-semibold text-xl mb-6">Send a message</h3>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium mb-1.5">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Your name"
+                  required
                   disabled={status === "loading"}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
-                  {status === "loading" ? "Sending..." : "Send Message"}
-                </Button>
-
-                {status === "success" && (
-                  <p className="text-sm text-green-500 text-center" role="status">
-                    Message sent. I&apos;ll get back to you soon.
-                  </p>
-                )}
-                {status === "error" && (
-                  <p className="text-sm text-destructive text-center" role="alert">
-                    {errorMessage}
-                  </p>
-                )}
-              </form>
-            </Card>
+                  className={fieldClass}
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium mb-1.5">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="you@example.com"
+                  required
+                  disabled={status === "loading"}
+                  className={fieldClass}
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium mb-1.5">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="What would you like to build?"
+                  rows={5}
+                  required
+                  disabled={status === "loading"}
+                  className={`${fieldClass} resize-y min-h-[120px]`}
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={status === "loading"}
+                className="w-full rounded-full bg-primary py-3 text-sm font-medium text-primary-foreground shadow-md shadow-primary/15 disabled:opacity-50"
+              >
+                {status === "loading" ? "Sending…" : "Send message"}
+              </button>
+              {status === "success" && (
+                <p className="text-sm text-primary text-center" role="status">
+                  Message sent — I&apos;ll get back to you soon.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-sm text-destructive text-center" role="alert">
+                  {errorMessage}
+                </p>
+              )}
+            </form>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-4"
           >
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Let's connect</h3>
-              <p className="text-muted-foreground mb-8 text-pretty">
-                I'm currently open to collaborating on exciting projects. Whether you're looking for a freelance partner, 
-                a full-time contributor, or just someone to brainstorm with about technology and ideas, feel free to reach 
-                out I'd love to connect.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              <motion.div
-                className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
-                whileHover={{ x: 10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-medium">Email</p>
-                  <a
-                    href="mailto:sehmaluva@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    sehmaluva@gmail.com
-                  </a>
-                </div>
-              </motion.div>
-
-              <motion.div
-                className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
-                whileHover={{ x: 10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Linkedin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <a
-                    className="font-medium"
-                    href="https://www.linkedin.com/in/malvin-t-machingura"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
-              </motion.div>
-
-              <motion.div
-                className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
-                whileHover={{ x: 10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Cloud className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <a
-                    className="font-medium"
-                    href="https://builder.aws.com/community/@sehmaluva"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    AWS Builder Community
-                  </a>
-                </div>
-              </motion.div>
-
-              <motion.div
-                className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors"
-                whileHover={{ x: 10 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-medium">Location</p>
-                  <p className="text-muted-foreground">Harare, Zimbabwe</p>
-                </div>
-              </motion.div>
-            </div>
-
-            <div className="pt-8">
-              <h4 className="font-semibold mb-4">Follow me</h4>
-              <div className="flex gap-4">
-                <Button
-                  asChild
-                  variant="outline"
-                  size="icon"
-                  className="hover:bg-primary hover:text-primary-foreground transition-colors bg-transparent"
+            <div className="depth-card p-6 md:p-8">
+              <h3 className="font-semibold text-xl mb-4">Elsewhere</h3>
+              <div className="space-y-4">
+                <a
+                  href="mailto:sehmaluva@gmail.com"
+                  className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                 >
-                  <a
-                    href="https://github.com/sehmaluva"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                  >
-                    <Github className="h-5 w-5" />
-                    <span className="sr-only">GitHub</span>
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="icon"
-                  className="hover:bg-primary hover:text-primary-foreground transition-colors bg-transparent"
+                  <span className="inline-flex size-10 items-center justify-center rounded-full bg-secondary">
+                    <Mail className="h-4 w-4 text-primary" />
+                  </span>
+                  sehmaluva@gmail.com
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/malvin-t-machingura"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                 >
-                  <a
-                    href="https://www.linkedin.com/in/malvin-t-machingura"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                  >
-                    <Linkedin className="h-5 w-5" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="icon"
-                  className="hover:bg-primary hover:text-primary-foreground transition-colors bg-transparent"
+                  <span className="inline-flex size-10 items-center justify-center rounded-full bg-secondary">
+                    <Linkedin className="h-4 w-4 text-primary" />
+                  </span>
+                  LinkedIn
+                </a>
+                <a
+                  href="https://builder.aws.com/community/@sehmaluva"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                 >
-                  <a
-                    href="https://builder.aws.com/community/@sehmaluva"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="AWS Builder Community"
-                  >
-                    <Cloud className="h-5 w-5" />
-                    <span className="sr-only">AWS Builder Community</span>
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="icon"
-                  className="hover:bg-primary hover:text-primary-foreground transition-colors bg-transparent"
-                >
-                  <a
-                    href="mailto:sehmaluva@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Email"
-                  >
-                    <Mail className="h-5 w-5" />
-                    <span className="sr-only">Email</span>
-                  </a>
-                </Button>
+                  <span className="inline-flex size-10 items-center justify-center rounded-full bg-secondary">
+                    <Cloud className="h-4 w-4 text-primary" />
+                  </span>
+                  AWS Builder Community
+                </a>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  <span className="inline-flex size-10 items-center justify-center rounded-full bg-secondary">
+                    <MapPin className="h-4 w-4 text-primary" />
+                  </span>
+                  Harare, Zimbabwe
+                </div>
               </div>
+            </div>
+            <div className="depth-card p-5 flex flex-wrap gap-2">
+              <a
+                href="https://github.com/sehmaluva"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm hover:bg-secondary"
+              >
+                <Github className="h-4 w-4" /> GitHub
+              </a>
+              <a
+                href="mailto:sehmaluva@gmail.com"
+                className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm hover:bg-secondary"
+              >
+                <Mail className="h-4 w-4" /> Email
+              </a>
             </div>
           </motion.div>
         </div>
