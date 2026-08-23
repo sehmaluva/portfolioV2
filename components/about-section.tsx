@@ -40,7 +40,7 @@ const timeline = [
   },
   {
     year: "March 2026 — Current",
-    title: "Software Engineer (Part-time)",
+    title: "Software Engineer (Remote)",
     company: "Fincheck Pvt Ltd",
     description:
       "Continuing at Fincheck part-time while studying: developing company projects, implementing features, database management, and DevOps",
