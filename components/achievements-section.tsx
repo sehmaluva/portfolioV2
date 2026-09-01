@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react"
 import Script from "next/script"
 import { useRef } from "react"
+import { CertificatesGallery } from "@/components/certificates-gallery"
 
 const certCards = [
   {
@@ -91,6 +92,8 @@ export function AchievementsSection() {
           </div>
         </motion.div>
       </div>
+
+      <CertificatesGallery />
 
       <div className="container mx-auto max-w-6xl px-6 mb-10">
         <div className="depth-card p-5 md:p-6">
