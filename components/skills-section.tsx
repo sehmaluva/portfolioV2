@@ -14,11 +14,15 @@ import {
   Hash,
   Github,
   Terminal,
+  Braces,
   Brain,
   Cpu,
   Sparkles,
   Bot,
   Languages,
+  Shield,
+  BarChart3,
+  BookText,
 } from "lucide-react";
 
 const skillCategories = [
@@ -28,8 +32,11 @@ const skillCategories = [
     skills: [
       { name: "Machine Learning", icon: Brain },
       { name: "Deep Learning", icon: Cpu },
+      { name: "Data Science", icon: BarChart3 },
       { name: "LLMs & GenAI", icon: Sparkles },
       { name: "NLP", icon: Languages },
+      { name: "Computational Linguistics", icon: BookText },
+      { name: "AI Safety", icon: Shield },
       { name: "Computer Vision", icon: Bot },
       { name: "PyTorch & Scikit", icon: Code },
       { name: "Prompt Eng.", icon: Workflow },
@@ -52,6 +59,8 @@ const skillCategories = [
     skills: [
       { name: "Django", icon: Server },
       { name: "Python", icon: Hash },
+      { name: "Rust", icon: Code },
+      { name: "C++", icon: Braces },
       { name: "PostgreSQL", icon: Database },
       { name: "MongoDB", icon: Database },
       { name: "RESTful APIs", icon: Globe },

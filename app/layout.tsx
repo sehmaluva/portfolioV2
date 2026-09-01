@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | Malvin T. Machingura",
   },
   description:
-    "Malvin T. Machingura (Tinotenda) is a Software Engineering student and part-time Software Engineer specializing in full-stack architecture, Artificial Intelligence, and Machine Learning. Building scalable applications with Python, Django, React, and modern web frameworks.",
+    "Malvin T. Machingura (sehmaluva) — Software Engineering student and part-time Software Engineer in Zimbabwe. Full-stack, AI/ML, data science (GCI World, University of Tokyo), computational linguistics (Africompilings), and AI safety research. Python, Django, React, Next.js.",
   keywords: [
     "Malvin T. Machingura",
     "Malvin Machingura",
@@ -39,6 +39,12 @@ export const metadata: Metadata = {
     "Full-Stack Developer",
     "Machine Learning Engineer",
     "AI Developer",
+    "Data Science",
+    "Computational Linguistics",
+    "GCI World",
+    "University of Tokyo",
+    "Africompilings",
+    "AI Safety",
     "Django",
     "React",
     "Next.js",
@@ -54,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Malvin T. Machingura (sehmaluva) | Software Engineer",
     description:
-      "Software Engineering student and part-time Software Engineer specializing in full-stack, AI, and Machine Learning. Open to global collaboration.",
+      "Software Engineering student and part-time Software Engineer in Zimbabwe — full-stack, AI/ML, data science (GCI World, University of Tokyo), computational linguistics, and AI safety research.",
     url: siteUrl,
     siteName: "Malvin T. Machingura Portfolio",
     locale: "en_US",
@@ -64,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Malvin T. Machingura (sehmaluva) | Software Engineer",
     description:
-      "Software Engineering student and part-time Software Engineer specializing in full-stack, AI, and Machine Learning. Open to global collaboration.",
+      "Software Engineering student and part-time Software Engineer in Zimbabwe — full-stack, AI/ML, data science (GCI World, University of Tokyo), computational linguistics, and AI safety research.",
   },
   robots: {
     index: true,

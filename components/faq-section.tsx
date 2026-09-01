@@ -29,7 +29,12 @@ const faqs = [
   {
     question: "What notable projects has Malvin built?",
     answer:
-      "Notable work includes Credit Risk Intelligence (explainable ML loan scoring), GitWrapped (GitHub activity visualization), Student Fest (open-source coding challenges), and this portfolio.",
+      "Notable work includes Credit Risk Intelligence (explainable ML loan scoring), ScholarProof (privacy-preserving scholarship eligibility on Midnight), Pet Image Classifier (CNN deep learning), ADTC Shona Coding Tutor (offline bilingual LLM mentor with RAG), GitWrapped (GitHub activity visualization), Student Fest (open-source coding challenges), and this portfolio.",
+  },
+  {
+    question: "What certifications and credentials does Malvin Machingura hold?",
+    answer:
+      "Malvin holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026) and the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026). He also has Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View certificates at https://sehmaluva.me/#achievements",
   },
   {
     question: "Has Malvin Machingura published AI research?",

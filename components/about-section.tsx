@@ -6,8 +6,11 @@ import Image from "next/image"
 const skills = [
   "Artificial Intelligence",
   "Machine Learning",
+  "Data Science",
   "LLMs & GenAI",
   "NLP",
+  "Computational Linguistics",
+  "AI Safety",
   "Deep Learning",
   "PyTorch",
   "Python",
@@ -19,7 +22,7 @@ const skills = [
   "MongoDB",
   "Docker",
   "Postman",
-  "RESTful API's",
+  "RESTful APIs",
   "Git",
   "GitHub",
   "HTML",
@@ -43,14 +46,14 @@ const timeline = [
     title: "Software Engineer (Remote)",
     company: "Fincheck Pvt Ltd",
     description:
-      "Continuing at Fincheck part-time while studying: developing company projects, implementing features, database management, and DevOps",
+      "Continuing at Fincheck part-time while studying: building Credit Risk Intelligence (explainable ML loan scoring), implementing features, database management, and DevOps",
   },
   {
     year: "May 2025 — February 2026",
     title: "Software Engineer Intern",
     company: "Fincheck Pvt Ltd",
     description:
-      "Assisted in the development of company projects, fixing bugs, implementing new features, database management, and DevOps",
+      "Built Credit Risk Intelligence — an end-to-end Django + React platform with LightGBM scoring and SHAP explainability. Also fixed bugs, implemented features, database management, and DevOps.",
   },
   {
     year: "March 2025 — May 2025",

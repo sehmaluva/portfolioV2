@@ -7,7 +7,7 @@
 - [Experience](https://sehmaluva.me/#experience): Fincheck (intern, then part-time), Chitungwiza Municipality, BUSE
 - [Projects](https://sehmaluva.me/#projects): Credit Risk Intelligence, GitWrapped, Student Fest, and more
 - [Skills](https://sehmaluva.me/#skills): AI & ML, Frontend, Backend, DevOps
-- [Achievements](https://sehmaluva.me/#achievements): Credly, Postman, Udacity, Frontend Masters, Microsoft Learn
+- [Achievements](https://sehmaluva.me/#achievements): GCI World (University of Tokyo), Africompilings computational linguistics, Credly, Postman, Udacity, Frontend Masters, Microsoft Learn
 - [Research & Publications](https://sehmaluva.me/#research): AfroJailbreak-ZW and AI safety work
 - [Contact](https://sehmaluva.me/#contact): Email and social links
 - [FAQ](https://sehmaluva.me/#faq): Common questions about Malvin T. Machingura
@@ -27,9 +27,20 @@
 - AWS Builder Community: https://builder.aws.com/community/@sehmaluva
 - Credly: https://www.credly.com/users/sehmaluva/badges
 
+## Certifications & credentials
+
+- GCI World April 2026 — Data science fundamentals and implementations (Matsuo-Iwasawa Laboratory, Graduate School of Engineering, University of Tokyo). Issued 31 August 2026.
+  - Certificate: https://sehmaluva.me/GCI_Certificate.pdf
+  - Preview: https://sehmaluva.me/GCI_Certificate.png
+- Africa Computational Linguistics Summer School — Africompilings / Linguistics Island. Awarded 15 August 2026.
+  - Certificate: https://sehmaluva.me/Certificate_Malvin_T._Machingura.pdf
+  - Preview: https://sehmaluva.me/Africompilings.png
+- Credly badges: Python Essentials 1 (Cisco), Introduction to Cybersecurity (Cisco), MongoDB Indexing & Aggregation (MongoDB)
+- Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, Microsoft Learn Credential
+
 ## Expertise
 
-- Artificial Intelligence, Machine Learning, Deep Learning, LLMs & GenAI, NLP
+- Artificial Intelligence, Machine Learning, Deep Learning, Data Science, LLMs & GenAI, NLP, Computational Linguistics, AI Safety
 - AI Safety, jailbreak evaluation, low-resource languages (Shona)
 - Python, C++, Rust, Java, TypeScript, JavaScript
 - Django, React, Next.js, PostgreSQL, MongoDB, Docker
@@ -43,7 +54,10 @@
 
 ## Notable projects
 
-- Credit Risk Intelligence: https://github.com/sehmaluva/credit-risk-intelligence
+- Credit Risk Intelligence: https://github.com/sehmaluva/credit-risk-intelligence — explainable ML loan scoring (Django + React)
+- ScholarProof: https://github.com/sehmaluva/scholarproof — privacy-preserving scholarship eligibility on Midnight (Web3)
+- Pet Image Classifier: https://github.com/sehmaluva/pet-image-classifier — CNN comparison of ResNet, AlexNet, and VGG
+- ADTC Shona Coding Tutor: https://github.com/sehmaluva/adtc-shona-coding-tutor — offline bilingual LLM coding mentor with RAG
 - GitWrapped: https://gitwrapped.sehmaluva.me
 - Student Fest: https://sehmaluva.github.io/student-fest
 - Portfolio: https://sehmaluva.me

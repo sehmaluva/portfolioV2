@@ -19,11 +19,38 @@ const projects: Project[] = [
   {
     title: "Credit Risk Intelligence",
     description:
-      "End-to-end Django + React platform that scores loan applications with explainable LightGBM models, SHAP insights, and portfolio analytics dashboards.",
+      "Production-grade credit risk platform for emerging-market lenders — LightGBM default prediction, SHAP explainability, loan officer workflows, portfolio analytics, and audit logging.",
     image: "/weather-analytics-dashboard-with-charts.jpg",
-    tech: ["Python", "Django", "React", "TypeScript", "Machine Learning"],
+    tech: ["Python", "Django", "React", "LightGBM", "SHAP", "MLOps"],
     liveUrl: "#",
     githubUrl: "https://github.com/sehmaluva/credit-risk-intelligence",
+  },
+  {
+    title: "ScholarProof",
+    description:
+      "Privacy-preserving scholarship eligibility on Midnight — students prove GPA, income, and enrollment without exposing private data.",
+    image: "/task-management-dashboard.png",
+    tech: ["Python", "Django", "React", "Web3"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/scholarproof",
+  },
+  {
+    title: "Pet Image Classifier",
+    description:
+      "CNN-based pet image classifier comparing ResNet, AlexNet, and VGG architectures for dog detection and breed accuracy.",
+    image: "/ai-content-generator-interface.png",
+    tech: ["Python", "PyTorch", "Deep Learning", "Computer Vision"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/pet-image-classifier",
+  },
+  {
+    title: "ADTC Shona Coding Tutor",
+    description:
+      "Offline AI coding mentor for the ADTC Laptop LLM Challenge — local quantized LLM with RAG over a CS syllabus and bilingual English/Shona explanations.",
+    image: "/ai-content-generator-interface.png",
+    tech: ["Python", "LLMs", "RAG", "NLP"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/sehmaluva/adtc-shona-coding-tutor",
   },
   {
     title: "Student Fest",
@@ -51,32 +78,6 @@ const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://sehmaluva.me",
     githubUrl: "https://github.com/sehmaluva/portfolioV2",
-  },
-  {
-    title: "Minija Management System",
-    description:
-      "An advanced broiler project management system using Python and TypeScript.",
-    image: "/task-management-dashboard.png",
-    tech: ["Python", "TypeScript", "Django"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/sehmaluva/minija",
-  },
-  {
-    title: "WhatIf Imagination World",
-    description: "The Imagination World. A creative platform for exploring ideas.",
-    image: "/ai-content-generator-interface.png",
-    tech: ["JavaScript", "React"],
-    liveUrl: "https://sehmaluva.github.io/whatif/",
-    githubUrl: "https://github.com/sehmaluva/whatif",
-  },
-  {
-    title: "Budget Buddy",
-    description:
-      "Budget management frontend application for tracking expenses and managing finances.",
-    image: "/weather-analytics-dashboard-with-charts.jpg",
-    tech: ["TypeScript", "React"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/sehmaluva/budget-buddy-frontend",
   },
 ]
 
