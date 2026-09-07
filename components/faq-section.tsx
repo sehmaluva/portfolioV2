@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Who is Malvin Machingura?",
     answer:
-      "Malvin T. Machingura (Malvin Tinotenda Machingura, also known as sehmaluva) is a Software Engineering student and part-time Software Engineer based in Zimbabwe. He specializes in full-stack architecture, Artificial Intelligence, and Machine Learning. He currently studies at Bindura University of Science Education and works part-time at Fincheck Pvt Ltd, where he previously completed a Software Engineer internship.",
+      "Malvin T. Machingura (Malvin Tinotenda Machingura, also known as sehmaluva) is a Software Engineering student and remote Software Engineer based in Zimbabwe. He specializes in full-stack architecture, Artificial Intelligence, and Machine Learning. He currently studies at Bindura University of Science Education and works remotely at Fincheck Pvt Ltd, where he previously completed a Software Engineer internship.",
   },
   {
     question: "What does Malvin Machingura specialize in?",

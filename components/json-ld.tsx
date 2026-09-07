@@ -17,7 +17,7 @@ const personSchema = {
   image: `${siteUrl}/profile.png`,
   jobTitle: ["Software Engineering Student", "Software Engineer"],
   description:
-    "Software Engineering student and part-time Software Engineer specializing in full-stack architecture, Artificial Intelligence, and Machine Learning solutions.",
+    "Software Engineering student and remote Software Engineer specializing in full-stack architecture, Artificial Intelligence, and Machine Learning solutions.",
   email: "mailto:sehmaluva@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -114,7 +114,7 @@ const faqSchema = {
       name: "Who is Malvin Machingura?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Malvin T. Machingura (Malvin Tinotenda Machingura, also known as sehmaluva) is a Software Engineering student and part-time Software Engineer based in Zimbabwe. He specializes in full-stack architecture, Artificial Intelligence, and Machine Learning. He currently studies at Bindura University of Science Education and works part-time at Fincheck Pvt Ltd, where he previously completed a Software Engineer internship.",
+        text: "Malvin T. Machingura (Malvin Tinotenda Machingura, also known as sehmaluva) is a Software Engineering student and remote Software Engineer based in Zimbabwe. He specializes in full-stack architecture, Artificial Intelligence, and Machine Learning. He currently studies at Bindura University of Science Education and works remotely at Fincheck Pvt Ltd, where he previously completed a Software Engineer internship.",
       },
     },
     {

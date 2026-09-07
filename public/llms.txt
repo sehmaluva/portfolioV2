@@ -15,7 +15,7 @@
 ## Identity
 
 - Name: Malvin T. Machingura (Malvin Tinotenda Machingura; also known as sehmaluva)
-- Role: Software Engineering Student & Part-time Software Engineer
+- Role: Software Engineering Student & Software Engineer
 - Location: Harare, Zimbabwe
 - Education: Currently pursuing HBSc Software Engineering at Bindura University of Science Education
 - Current role: Software Engineer (Remote) at Fincheck Pvt Ltd while studying

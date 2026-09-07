@@ -46,7 +46,7 @@ const timeline = [
     title: "Software Engineer (Remote)",
     company: "Fincheck Pvt Ltd",
     description:
-      "Continuing at Fincheck part-time while studying: building Credit Risk Intelligence (explainable ML loan scoring), implementing features, database management, and DevOps",
+      "Continuing at Fincheck remotely while studying: building Credit Risk Intelligence (explainable ML loan scoring), implementing features, database management, and DevOps",
   },
   {
     year: "May 2025 — February 2026",
@@ -108,9 +108,9 @@ export function AboutSection() {
             className="depth-card p-6 md:p-8"
           >
             <p className="text-foreground/90 leading-relaxed text-base md:text-lg mb-6">
-              I&apos;m a Software Engineering student and part-time Software Engineer specializing in
+              I&apos;m a Software Engineering student and remote Software Engineer specializing in
               full-stack architecture, Artificial Intelligence, and Machine Learning solutions. I
-              currently study at Bindura University of Science Education and work part-time at
+              currently study at Bindura University of Science Education and work remotely at
               Fincheck Pvt Ltd (after previously completing an internship there). I design and build
               scalable, user-focused applications using Python, C++, Rust, Django, and modern web
               frameworks. My expertise spans model training, intelligent automation, RESTful APIs,
