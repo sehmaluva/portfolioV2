@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const skills = [
   "Artificial Intelligence",
@@ -31,7 +31,7 @@ const skills = [
   "TypeScript",
   "React",
   "Next.js",
-]
+];
 
 const timeline = [
   {
@@ -46,7 +46,7 @@ const timeline = [
     title: "Software Engineer (Remote)",
     company: "Fincheck Pvt Ltd",
     description:
-      "Continuing at Fincheck remotely while studying: building Credit Risk Intelligence (explainable ML loan scoring), implementing features, database management, and DevOps",
+      "Continuing at Fincheck remotely while studying: building company systems, implementing features, database management, and DevOps",
   },
   {
     year: "May 2025 — February 2026",
@@ -62,7 +62,7 @@ const timeline = [
     description:
       "Assisted in the maintenance of internal tools and applications. Collaborated with the IT team to troubleshoot and resolve technical issues.",
   },
-]
+];
 
 export function AboutSection() {
   return (
@@ -79,8 +79,8 @@ export function AboutSection() {
             Who I am
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            A student engineer focused on clear systems, thoughtful products, and AI that works in
-            the real world.
+            A student engineer focused on clear systems, thoughtful products,
+            and AI that works in the real world.
           </p>
         </motion.div>
 
@@ -108,13 +108,15 @@ export function AboutSection() {
             className="depth-card p-6 md:p-8"
           >
             <p className="text-foreground/90 leading-relaxed text-base md:text-lg mb-6">
-              I&apos;m a Software Engineering student and remote Software Engineer specializing in
-              full-stack architecture, Artificial Intelligence, and Machine Learning solutions. I
-              currently study at Bindura University of Science Education and work remotely at
-              Fincheck Pvt Ltd (after previously completing an internship there). I design and build
-              scalable, user-focused applications using Python, C++, Rust, Django, and modern web
-              frameworks. My expertise spans model training, intelligent automation, RESTful APIs,
-              database optimization, and end-to-end production delivery.
+              I&apos;m a Software Engineering student and remote Software
+              Engineer specializing in full-stack architecture, Artificial
+              Intelligence, and Machine Learning solutions. I currently study at
+              Bindura University of Science Education and work remotely at
+              Fincheck Pvt Ltd (after previously completing an internship
+              there). I design and build scalable, user-focused applications
+              using Python, C++, Rust, Django, and modern web frameworks. My
+              expertise spans model training, intelligent automation, RESTful
+              APIs, database optimization, and end-to-end production delivery.
             </p>
             <div className="flex flex-wrap gap-2">
               {skills.map((skill) => (
@@ -130,7 +132,9 @@ export function AboutSection() {
         </div>
 
         <div id="experience" className="scroll-mt-24">
-          <h3 className="font-display text-2xl md:text-3xl font-semibold mb-6">Experience</h3>
+          <h3 className="font-display text-2xl md:text-3xl font-semibold mb-6">
+            Experience
+          </h3>
           <div className="relative space-y-4 md:space-y-0 md:pl-0">
             <div className="hidden md:block absolute left-[11px] top-4 bottom-4 w-px bg-border" />
             {timeline.map((item, index) => (
@@ -147,10 +151,16 @@ export function AboutSection() {
                   className="depth-card p-5 md:p-6"
                   style={{ marginLeft: index % 2 === 0 ? 0 : undefined }}
                 >
-                  <p className="text-sm font-medium text-primary mb-1">{item.year}</p>
+                  <p className="text-sm font-medium text-primary mb-1">
+                    {item.year}
+                  </p>
                   <h4 className="text-lg font-semibold mb-0.5">{item.title}</h4>
-                  <p className="text-sm text-accent font-medium mb-2">{item.company}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+                  <p className="text-sm text-accent font-medium mb-2">
+                    {item.company}
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </motion.article>
             ))}
@@ -158,5 +168,5 @@ export function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

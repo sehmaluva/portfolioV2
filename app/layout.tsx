@@ -1,26 +1,26 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Fraunces, Outfit } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
-import { Suspense } from "react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { JsonLd } from "@/components/json-ld"
-import { ThemeProvider } from "@/components/theme-provider"
+import type React from "react";
+import type { Metadata } from "next";
+import { Fraunces, Outfit } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
+import { Suspense } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { JsonLd } from "@/components/json-ld";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
   display: "swap",
-})
+});
 
 const fraunces = Fraunces({
   subsets: ["latin"],
   variable: "--font-fraunces",
   display: "swap",
-})
+});
 
-const siteUrl = "https://sehmaluva.me"
+const siteUrl = "https://sehmaluva.me";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -83,17 +83,25 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${fraunces.variable}`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${outfit.variable} ${fraunces.variable}`}
+      suppressHydrationWarning
+    >
       <body className={`${outfit.className} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+        >
           <JsonLd />
           <Suspense>
             {children}
@@ -103,5 +111,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

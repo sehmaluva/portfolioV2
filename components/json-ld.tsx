@@ -285,7 +285,13 @@ const projectsSchema = {
 };
 
 export function JsonLd() {
-  const schemas = [personSchema, websiteSchema, faqSchema, researchSchema, projectsSchema];
+  const schemas = [
+    personSchema,
+    websiteSchema,
+    faqSchema,
+    researchSchema,
+    projectsSchema,
+  ];
 
   return (
     <>

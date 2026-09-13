@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useState } from "react"
-import { ChevronDown } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const faqs = [
   {
@@ -32,7 +32,8 @@ const faqs = [
       "Notable work includes Credit Risk Intelligence (explainable ML loan scoring), ScholarProof (privacy-preserving scholarship eligibility on Midnight), Pet Image Classifier (CNN deep learning), ADTC Shona Coding Tutor (offline bilingual LLM mentor with RAG), GitWrapped (GitHub activity visualization), Student Fest (open-source coding challenges), and this portfolio.",
   },
   {
-    question: "What certifications and credentials does Malvin Machingura hold?",
+    question:
+      "What certifications and credentials does Malvin Machingura hold?",
     answer:
       "Malvin holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026) and the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026). He also has Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View certificates at https://sehmaluva.me/#achievements",
   },
@@ -41,10 +42,10 @@ const faqs = [
     answer:
       "Yes. He authored AfroJailbreak-ZW: Evaluating Jailbreak Resistance in Shona with Apart Research (June 2026) — a pilot study on whether ChatGPT and Gemini are easier to jailbreak in Shona and Shona-English code-switched prompts than in English. Read it at https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
   },
-]
+];
 
 export function FaqSection() {
-  const [open, setOpen] = useState<number | null>(0)
+  const [open, setOpen] = useState<number | null>(0);
 
   return (
     <section id="faq" className="py-24 px-6 scroll-mt-20">
@@ -66,7 +67,7 @@ export function FaqSection() {
 
         <div className="space-y-3">
           {faqs.map((faq, index) => {
-            const isOpen = open === index
+            const isOpen = open === index;
             return (
               <motion.div
                 key={faq.question}
@@ -82,7 +83,9 @@ export function FaqSection() {
                   onClick={() => setOpen(isOpen ? null : index)}
                   aria-expanded={isOpen}
                 >
-                  <span className="font-medium text-base md:text-lg">{faq.question}</span>
+                  <span className="font-medium text-base md:text-lg">
+                    {faq.question}
+                  </span>
                   <ChevronDown
                     className={cn(
                       "h-5 w-5 shrink-0 text-muted-foreground transition-transform",
@@ -93,7 +96,9 @@ export function FaqSection() {
                 <div
                   className={cn(
                     "grid transition-all duration-300",
-                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
+                    isOpen
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0",
                   )}
                 >
                   <div className="overflow-hidden">
@@ -103,10 +108,10 @@ export function FaqSection() {
                   </div>
                 </div>
               </motion.div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }
