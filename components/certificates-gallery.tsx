@@ -34,6 +34,15 @@ const certificates: Certificate[] = [
     image: "/Africompilings.png",
     pdf: "/Certificate_Malvin_T._Machingura.pdf",
   },
+  {
+    title: "2026 Aspire Leaders Program",
+    issuer: "Aspire Institute",
+    date: "September 2026",
+    description:
+      "Completed 40 hours of coursework across all modules — critical thinking, communication, and social impact.",
+    image: "/Aspire-Certificate.png",
+    pdf: "/Aspire-Certificate.pdf",
+  },
 ]
 
 function CertificateLightbox({
@@ -211,12 +220,12 @@ export function CertificatesGallery() {
             Academic certificates
           </h3>
           <p className="text-muted-foreground mt-2 max-w-2xl">
-            Data science and computational linguistics programs — click a certificate to view it
-            full size.
+            Data science, computational linguistics, and leadership programs — click a certificate
+            to view it full size.
           </p>
         </motion.div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {certificates.map((certificate, index) => (
             <CertificateCard
               key={certificate.title}

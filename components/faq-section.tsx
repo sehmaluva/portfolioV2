@@ -35,7 +35,7 @@ const faqs = [
     question:
       "What certifications and credentials does Malvin Machingura hold?",
     answer:
-      "Malvin holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026) and the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026). He also has Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View certificates at https://sehmaluva.me/#achievements",
+      "Malvin holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026), the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026), and the 2026 Aspire Leaders Program (Aspire Institute, September 2026). He also has Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View certificates at https://sehmaluva.me/#achievements",
   },
   {
     question: "Has Malvin Machingura published AI research?",

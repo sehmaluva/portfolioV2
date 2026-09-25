@@ -82,6 +82,19 @@ const personSchema = {
       },
       url: `${siteUrl}/Certificate_Malvin_T._Machingura.pdf`,
     },
+    {
+      "@type": "EducationalOccupationalCredential",
+      name: "2026 Aspire Leaders Program",
+      description:
+        "Completed all modules of the Aspire Leaders Program (40 hours of coursework).",
+      credentialCategory: "certificate",
+      dateCreated: "2026-09-01",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Aspire Institute",
+      },
+      url: `${siteUrl}/Aspire-Certificate.pdf`,
+    },
   ],
   sameAs: [
     "https://github.com/sehmaluva",
@@ -154,7 +167,7 @@ const faqSchema = {
       name: "What certifications and credentials does Malvin Machingura hold?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Malvin holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026) and the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026). He also has Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View certificates at https://sehmaluva.me/#achievements",
+        text: "Malvin holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026), the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026), and the 2026 Aspire Leaders Program (Aspire Institute, September 2026). He also has Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View certificates at https://sehmaluva.me/#achievements",
       },
     },
     {

@@ -7,7 +7,7 @@
 - [Experience](https://sehmaluva.me/#experience): Fincheck (intern, then part-time), Chitungwiza Municipality, BUSE
 - [Projects](https://sehmaluva.me/#projects): Credit Risk Intelligence, GitWrapped, Student Fest, and more
 - [Skills](https://sehmaluva.me/#skills): AI & ML, Frontend, Backend, DevOps
-- [Achievements](https://sehmaluva.me/#achievements): GCI World (University of Tokyo), Africompilings computational linguistics, Credly, Postman, Udacity, Frontend Masters, Microsoft Learn
+- [Achievements](https://sehmaluva.me/#achievements): GCI World (University of Tokyo), Africompilings computational linguistics, Aspire Leaders Program 2026, Credly, Postman, Udacity, Frontend Masters, Microsoft Learn
 - [Research & Publications](https://sehmaluva.me/#research): AfroJailbreak-ZW and AI safety work
 - [Contact](https://sehmaluva.me/#contact): Email and social links
 - [FAQ](https://sehmaluva.me/#faq): Common questions about Malvin T. Machingura
@@ -35,6 +35,9 @@
 - Africa Computational Linguistics Summer School — Africompilings / Linguistics Island. Awarded 15 August 2026.
   - Certificate: https://sehmaluva.me/Certificate_Malvin_T._Machingura.pdf
   - Preview: https://sehmaluva.me/Africompilings.png
+- 2026 Aspire Leaders Program — Aspire Institute. Completed all modules (40 hours of coursework) in September 2026.
+  - Certificate: https://sehmaluva.me/Aspire-Certificate.pdf
+  - Preview: https://sehmaluva.me/Aspire-Certificate.png
 - Credly badges: Python Essentials 1 (Cisco), Introduction to Cybersecurity (Cisco), MongoDB Indexing & Aggregation (MongoDB)
 - Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, Microsoft Learn Credential
 
