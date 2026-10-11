@@ -32,7 +32,7 @@ export default function OpenGraphImage() {
           </div>
         </div>
         <div style={{ fontSize: 20, color: "#0f766e", fontFamily: "sans-serif" }}>
-          sehmaluva.me
+          sehmaluva.codes
         </div>
       </div>
     ),

@@ -2,15 +2,15 @@
 
 > Software Engineer in Zimbabwe specializing in full-stack architecture, Artificial Intelligence, Machine Learning, and AI safety research for low-resource languages.
 
-- [Home](https://sehmaluva.me): Portfolio of Malvin T. Machingura
-- [About](https://sehmaluva.me/#about): Bio, skills, and background
-- [Experience](https://sehmaluva.me/#experience): Fincheck (intern, then part-time), Chitungwiza Municipality, BUSE
-- [Projects](https://sehmaluva.me/#projects): Credit Risk Intelligence, GitWrapped, Student Fest, and more
-- [Skills](https://sehmaluva.me/#skills): AI & ML, Frontend, Backend, DevOps
-- [Achievements](https://sehmaluva.me/#achievements): GCI World (University of Tokyo), Africompilings computational linguistics, Aspire Leaders Program 2026, Credly, Postman, Udacity, Frontend Masters, Microsoft Learn
-- [Research & Publications](https://sehmaluva.me/#research): AfroJailbreak-ZW and AI safety work
-- [Contact](https://sehmaluva.me/#contact): Email and social links
-- [FAQ](https://sehmaluva.me/#faq): Common questions about Malvin T. Machingura
+- [Home](https://sehmaluva.codes): Portfolio of Malvin T. Machingura
+- [About](https://sehmaluva.codes/#about): Bio, skills, and background
+- [Experience](https://sehmaluva.codes/#experience): Fincheck (intern, then part-time), Chitungwiza Municipality, BUSE
+- [Projects](https://sehmaluva.codes/#projects): Credit Risk Intelligence, GitWrapped, Student Fest, and more
+- [Skills](https://sehmaluva.codes/#skills): AI & ML, Frontend, Backend, DevOps
+- [Achievements](https://sehmaluva.codes/#achievements): Udacity Future AWS AI Programmer Nanodegree, GCI World (University of Tokyo), Africompilings computational linguistics, Aspire Leaders Program 2026, Credly, Postman, Frontend Masters, Microsoft Learn
+- [Research & Publications](https://sehmaluva.codes/#research): AfroJailbreak-ZW and AI safety work
+- [Contact](https://sehmaluva.codes/#contact): Email and social links
+- [FAQ](https://sehmaluva.codes/#faq): Common questions about Malvin T. Machingura
 
 ## Identity
 
@@ -20,8 +20,9 @@
 - Education: Currently pursuing HBSc Software Engineering at Bindura University of Science Education
 - Current role: Software Engineer (Remote) at Fincheck Pvt Ltd while studying
 - Previous Fincheck role: Software Engineer Intern (May 2025 — February 2026)
+- Credentials: Udacity Future AWS AI Programmer Nanodegree (October 2026); GCI World 2026 (University of Tokyo); Africa Computational Linguistics Summer School 2026 (Africompilings); Aspire Leaders Program 2026
 - Email: sehmaluva@gmail.com
-- Site: https://sehmaluva.me
+- Site: https://sehmaluva.codes
 - GitHub: https://github.com/sehmaluva
 - LinkedIn: https://www.linkedin.com/in/malvin-t-machingura
 - AWS Builder Community: https://builder.aws.com/community/@sehmaluva
@@ -29,21 +30,26 @@
 
 ## Certifications & credentials
 
+- Future AWS AI Programmer Nanodegree — Udacity (Part of Accenture). Verified Nanodegree program completion. Awarded 9 October 2026. Covers Python programming for AI with NumPy, pandas, and Matplotlib for data analysis and visualization; building and training machine learning models with popular Python libraries; implementing neural networks in PyTorch; hands-on deep learning projects; and generative AI with Transformer neural networks — building, training, and deploying them with PyTorch and leveraging pre-trained models for natural language processing. Designed for individuals with basic programming experience, it prepares learners for advanced study in AI and machine learning and for a career in AI programming.
+  - Certificate: https://sehmaluva.codes/Udacity-Future-AWS-AI-Programmer-Nanodegree.pdf
+  - Preview: https://sehmaluva.codes/Udacity-Future-AWS-AI-Programmer-Nanodegree.png
+  - Verify: https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc
 - GCI World April 2026 — Data science fundamentals and implementations (Matsuo-Iwasawa Laboratory, Graduate School of Engineering, University of Tokyo). Issued 31 August 2026.
-  - Certificate: https://sehmaluva.me/GCI_Certificate.pdf
-  - Preview: https://sehmaluva.me/GCI_Certificate.png
+  - Certificate: https://sehmaluva.codes/GCI_Certificate.pdf
+  - Preview: https://sehmaluva.codes/GCI_Certificate.png
 - Africa Computational Linguistics Summer School — Africompilings / Linguistics Island. Awarded 15 August 2026.
-  - Certificate: https://sehmaluva.me/Certificate_Malvin_T._Machingura.pdf
-  - Preview: https://sehmaluva.me/Africompilings.png
+  - Certificate: https://sehmaluva.codes/Certificate_Malvin_T._Machingura.pdf
+  - Preview: https://sehmaluva.codes/Africompilings.png
 - 2026 Aspire Leaders Program — Aspire Institute. Completed all modules (40 hours of coursework) in September 2026.
-  - Certificate: https://sehmaluva.me/Aspire-Certificate.pdf
-  - Preview: https://sehmaluva.me/Aspire-Certificate.png
+  - Certificate: https://sehmaluva.codes/Aspire-Certificate.pdf
+  - Preview: https://sehmaluva.codes/Aspire-Certificate.png
 - Credly badges: Python Essentials 1 (Cisco), Introduction to Cybersecurity (Cisco), MongoDB Indexing & Aggregation (MongoDB)
 - Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, Microsoft Learn Credential
 
 ## Expertise
 
 - Artificial Intelligence, Machine Learning, Deep Learning, Data Science, LLMs & GenAI, NLP, Computational Linguistics, AI Safety
+- PyTorch, NumPy, pandas, Matplotlib, Generative AI, Transformer Neural Networks, Amazon Web Services (AWS), Cloud Computing, Applied AI programming
 - AI Safety, jailbreak evaluation, low-resource languages (Shona)
 - Python, C++, Rust, Java, TypeScript, JavaScript
 - Django, React, Next.js, PostgreSQL, MongoDB, Docker
@@ -61,10 +67,10 @@
 - ScholarProof: https://github.com/sehmaluva/scholarproof — privacy-preserving scholarship eligibility on Midnight (Web3)
 - Pet Image Classifier: https://github.com/sehmaluva/pet-image-classifier — CNN comparison of ResNet, AlexNet, and VGG
 - ADTC Shona Coding Tutor: https://github.com/sehmaluva/adtc-shona-coding-tutor — offline bilingual LLM coding mentor with RAG
-- GitWrapped: https://gitwrapped.sehmaluva.me
+- GitWrapped: https://gitwrapped.sehmaluva.codes
 - Student Fest: https://sehmaluva.github.io/student-fest
-- Portfolio: https://sehmaluva.me
+- Portfolio: https://sehmaluva.codes
 
 ## Optional
 
-- Preferred citation: Malvin T. Machingura (sehmaluva), Software Engineer — https://sehmaluva.me
+- Preferred citation: Malvin T. Machingura (sehmaluva), Software Engineer — https://sehmaluva.codes

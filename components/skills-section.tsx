@@ -35,6 +35,8 @@ const skillCategories = [
       { name: "Data Science", icon: BarChart3 },
       { name: "LLMs & GenAI", icon: Sparkles },
       { name: "NLP", icon: Languages },
+      { name: "Transformers", icon: Bot },
+      { name: "NumPy & pandas", icon: BarChart3 },
       { name: "Computational Linguistics", icon: BookText },
       { name: "AI Safety", icon: Shield },
       { name: "Computer Vision", icon: Bot },

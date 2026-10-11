@@ -14,7 +14,7 @@ const faqs = [
   {
     question: "What does Malvin Machingura specialize in?",
     answer:
-      "He builds scalable applications with Python, Django, React, Next.js, and TypeScript, and works across AI/ML including model training, LLMs, GenAI, Deep Learning, explainable ML systems such as credit risk scoring, and AI safety research for low-resource languages like Shona.",
+      "He builds scalable applications with Python, Django, React, Next.js, and TypeScript, and works across AI/ML including model training in PyTorch, LLMs, GenAI, Deep Learning, explainable ML systems such as credit risk scoring, and AI safety research for low-resource languages like Shona.",
   },
   {
     question: "Where is Malvin Machingura based?",
@@ -35,7 +35,7 @@ const faqs = [
     question:
       "What certifications and credentials does Malvin Machingura hold?",
     answer:
-      "Malvin holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026), the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026), and the 2026 Aspire Leaders Program (Aspire Institute, September 2026). He also has Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View certificates at https://sehmaluva.me/#achievements",
+      "Malvin holds the Future AWS AI Programmer Nanodegree from Udacity (issued 9 October 2026, verifiable at https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc), covering Python for AI with NumPy, pandas, and Matplotlib, building and training machine learning models, neural networks and generative AI with Transformer networks in PyTorch, and NLP with pre-trained models. He also holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026), the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026), and the 2026 Aspire Leaders Program (Aspire Institute, September 2026). His other credentials include Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View the certificates and verify credentials at https://sehmaluva.codes/#achievements",
   },
   {
     question: "Has Malvin Machingura published AI research?",

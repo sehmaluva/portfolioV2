@@ -67,7 +67,7 @@ const projects: Project[] = [
       "2025 GitHub Contributions Wrapped: visualize your yearly activity and highlights.",
     image: "/gitwrapped_screenshot.png",
     tech: ["TypeScript", "Next.js"],
-    liveUrl: "https://gitwrapped.sehmaluva.me",
+    liveUrl: "https://gitwrapped.sehmaluva.codes",
     githubUrl: "https://github.com/sehmaluva/gitwrapped",
   },
   {
@@ -76,7 +76,7 @@ const projects: Project[] = [
       "Software Engineer Portfolio using Next.js. A showcase of my skills and projects.",
     image: "/portfolio_screenshot.png",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    liveUrl: "https://sehmaluva.me",
+    liveUrl: "https://sehmaluva.codes",
     githubUrl: "https://github.com/sehmaluva/portfolioV2",
   },
 ]

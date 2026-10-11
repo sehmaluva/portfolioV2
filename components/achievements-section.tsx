@@ -8,6 +8,12 @@ import { CertificatesGallery } from "@/components/certificates-gallery"
 
 const certCards = [
   {
+    title: "Future AWS AI Programmer Nanodegree",
+    issuer: "Udacity",
+    img: "https://www.udacity.com/favicon.ico",
+    href: "https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc",
+  },
+  {
     title: "Postman Student Expert",
     issuer: "Postman",
     img: "https://voyager.postman.com/logo/postman-logo-icon-orange.svg",
@@ -125,9 +131,9 @@ export function AchievementsSection() {
 
       <div className="pl-6 md:pl-[max(1.5rem,calc((100vw-72rem)/2+1.5rem))]">
         <p className="container mx-auto max-w-6xl px-0 pr-6 mb-4 text-sm text-muted-foreground">
-          Credly: Python Essentials 1 (Cisco), Introduction to Cybersecurity (Cisco), MongoDB
-          Indexing &amp; Aggregation. Also Postman, Udacity AWS AI Practitioner, Frontend Masters
-          React v9, Microsoft Learn.
+          Udacity Future AWS AI Programmer Nanodegree. Credly: Python Essentials 1 (Cisco),
+          Introduction to Cybersecurity (Cisco), MongoDB Indexing &amp; Aggregation. Also Postman,
+          Udacity AWS AI Practitioner, Frontend Masters React v9, Microsoft Learn.
         </p>
         <div ref={rowRef} className="scroll-row pr-6 items-stretch">
           {credlyBadges.map((badge) => (

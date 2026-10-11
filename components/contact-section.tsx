@@ -33,7 +33,7 @@ export function ContactSection() {
         body: JSON.stringify({
           access_key: accessKey,
           subject: `Portfolio contact from ${formData.name}`,
-          from_name: "sehmaluva.me",
+          from_name: "sehmaluva.codes",
           name: formData.name,
           email: formData.email,
           message: formData.message,

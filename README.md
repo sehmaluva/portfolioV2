@@ -2,7 +2,7 @@
 
 ## 🔗 Live Demo
 
-**View the live portfolio:** [https://sehmaluva.me](https://sehmaluva.me)
+**View the live portfolio:** [https://sehmaluva.codes](https://sehmaluva.codes)
 
 ## Project Overview
 
@@ -86,6 +86,7 @@ The project is optimized for deployment on platforms like Vercel.
 
 This portfolio was designed and built by **Malvin Machingura (sehmaluva)**.
 
+* **Credential:** Future AWS AI Programmer Nanodegree (Udacity, October 2026) — [verify](https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc)
 * **GitHub:** [@sehmaluva](https://github.com/sehmaluva)
 * **LinkedIn:** [Malvin Machingura](https://linkedin.com/in/malvin-t-machingura)
-* **Email:** sehmaluv@gmail.com
+* **Email:** sehmaluva@gmail.com

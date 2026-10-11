@@ -20,7 +20,7 @@ const fraunces = Fraunces({
   display: "swap",
 });
 
-const siteUrl = "https://sehmaluva.me";
+const siteUrl = "https://sehmaluva.codes";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -40,6 +40,14 @@ export const metadata: Metadata = {
     "Machine Learning Engineer",
     "AI Developer",
     "Data Science",
+    "AWS AI Programmer Nanodegree",
+    "Udacity Nanodegree",
+    "Amazon Web Services",
+    "PyTorch",
+    "Generative AI",
+    "Transformers",
+    "NumPy",
+    "pandas",
     "Computational Linguistics",
     "GCI World",
     "University of Tokyo",

@@ -32,7 +32,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://sehmaluva.me/sitemap.xml",
-    host: "https://sehmaluva.me",
+    sitemap: "https://sehmaluva.codes/sitemap.xml",
+    host: "https://sehmaluva.codes",
   }
 }

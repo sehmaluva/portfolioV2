@@ -13,6 +13,11 @@ const skills = [
   "AI Safety",
   "Deep Learning",
   "PyTorch",
+  "Generative AI",
+  "Transformers",
+  "NumPy",
+  "pandas",
+  "Matplotlib",
   "Python",
   "Java",
   "C++",
@@ -117,6 +122,9 @@ export function AboutSection() {
               using Python, C++, Rust, Django, and modern web frameworks. My
               expertise spans model training, intelligent automation, RESTful
               APIs, database optimization, and end-to-end production delivery.
+              I hold the Udacity Future AWS AI Programmer Nanodegree, covering
+              Python for AI, machine learning, neural networks in PyTorch, and
+              generative AI with Transformer networks.
             </p>
             <div className="flex flex-wrap gap-2">
               {skills.map((skill) => (

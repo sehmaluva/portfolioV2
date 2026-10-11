@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Download, Expand, X } from "lucide-react"
+import { BadgeCheck, Download, Expand, X } from "lucide-react"
 import Image from "next/image"
 import { useCallback, useEffect, useRef, useState } from "react"
 import { cn } from "@/lib/utils"
@@ -13,9 +13,21 @@ type Certificate = {
   description: string
   image: string
   pdf: string
+  verify?: string
 }
 
 const certificates: Certificate[] = [
+  {
+    title: "Future AWS AI Programmer Nanodegree",
+    issuer: "Udacity (Part of Accenture)",
+    date: "9 October 2026",
+    description:
+      "Verified Nanodegree program completion: Python for AI with NumPy, pandas, and Matplotlib, training machine learning models, neural networks in PyTorch, and generative AI with Transformer networks for NLP.",
+    image: "/Udacity-Future-AWS-AI-Programmer-Nanodegree.png",
+    pdf: "/Udacity-Future-AWS-AI-Programmer-Nanodegree.pdf",
+    verify:
+      "https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc",
+  },
   {
     title: "GCI World April 2026",
     issuer: "Matsuo-Iwasawa Laboratory, University of Tokyo",
@@ -123,6 +135,17 @@ function CertificateLightbox({
             <Download className="h-4 w-4" />
             Download official PDF
           </a>
+          {certificate.verify && (
+            <a
+              href={certificate.verify}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-secondary"
+            >
+              <BadgeCheck className="h-4 w-4" />
+              Verify credential
+            </a>
+          )}
         </div>
       </div>
     </div>
@@ -198,6 +221,18 @@ function CertificateCard({
           <Download className="h-3.5 w-3.5" />
           Official PDF
         </a>
+        {certificate.verify && (
+          <a
+            href={certificate.verify}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-fit items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium hover:bg-secondary transition-colors"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <BadgeCheck className="h-3.5 w-3.5" />
+            Verify credential
+          </a>
+        )}
       </div>
     </motion.article>
   )
@@ -217,11 +252,11 @@ export function CertificatesGallery() {
         >
           <p className="section-kicker mb-2">Featured</p>
           <h3 className="font-display text-2xl md:text-3xl font-semibold tracking-tight">
-            Academic certificates
+            Certificates &amp; credentials
           </h3>
           <p className="text-muted-foreground mt-2 max-w-2xl">
-            Data science, computational linguistics, and leadership programs — click a certificate
-            to view it full size.
+            Cloud and applied AI, data science, computational linguistics, and leadership
+            credentials — click a certificate to view it full size and verify it with the issuer.
           </p>
         </motion.div>
 

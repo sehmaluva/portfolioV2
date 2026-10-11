@@ -1,4 +1,4 @@
-const siteUrl = "https://sehmaluva.me";
+const siteUrl = "https://sehmaluva.codes";
 
 const personSchema = {
   "@context": "https://schema.org",
@@ -45,6 +45,14 @@ const personSchema = {
     "Jailbreak Evaluation",
     "Low-resource Languages",
     "Shona",
+    "PyTorch",
+    "Generative AI",
+    "Transformer Neural Networks",
+    "NumPy",
+    "pandas",
+    "Matplotlib",
+    "Amazon Web Services (AWS)",
+    "Cloud Computing",
     "Python",
     "Django",
     "React",
@@ -56,6 +64,35 @@ const personSchema = {
     "Docker",
   ],
   hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      name: "Future AWS AI Programmer Nanodegree",
+      description:
+        "Verified Nanodegree program completion from Udacity covering Python programming for AI with NumPy, pandas, and Matplotlib for data analysis and visualization; building and training machine learning models with popular Python libraries; implementing neural networks in PyTorch; hands-on deep learning projects; and generative AI with Transformer neural networks — building, training, and deploying them with PyTorch and leveraging pre-trained models for natural language processing. Designed for individuals with basic programming experience, it prepares learners for advanced study in AI and machine learning and for a career in AI programming.",
+      credentialCategory: "certificate",
+      dateCreated: "2026-10-09",
+      competencyRequired: [
+        "Python for AI",
+        "NumPy",
+        "pandas",
+        "Matplotlib",
+        "Data Analysis and Visualization",
+        "Machine Learning",
+        "PyTorch",
+        "Neural Networks",
+        "Deep Learning",
+        "Generative AI",
+        "Transformer Neural Networks",
+        "Natural Language Processing",
+        "Model Deployment",
+      ],
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Udacity",
+        url: "https://www.udacity.com",
+      },
+      url: "https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc",
+    },
     {
       "@type": "EducationalOccupationalCredential",
       name: "GCI World April 2026",
@@ -135,7 +172,7 @@ const faqSchema = {
       name: "What does Malvin Machingura specialize in?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "He specializes in building scalable applications with Python, Django, React, Next.js, and TypeScript, plus AI/ML work including model training, LLMs, GenAI, Deep Learning, explainable ML systems such as credit risk scoring, and AI safety research for low-resource languages like Shona.",
+        text: "He builds scalable applications with Python, Django, React, Next.js, and TypeScript, and works across AI/ML including model training in PyTorch, LLMs, GenAI, Deep Learning, explainable ML systems such as credit risk scoring, and AI safety research for low-resource languages like Shona.",
       },
     },
     {
@@ -143,23 +180,23 @@ const faqSchema = {
       name: "Where is Malvin Machingura based?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Malvin T. Machingura is based in Harare, Zimbabwe, and is open to global collaboration and remote opportunities.",
+        text: "He is based in Harare, Zimbabwe, and is open to global collaboration and remote opportunities.",
       },
     },
     {
       "@type": "Question",
-      name: "How can I contact Malvin Machingura?",
+      name: "How can I contact or hire Malvin Machingura?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can email sehmaluva@gmail.com, visit https://sehmaluva.me/#contact, or connect via LinkedIn at https://www.linkedin.com/in/malvin-t-machingura, GitHub at https://github.com/sehmaluva, and AWS Builder Community at https://builder.aws.com/community/@sehmaluva.",
+        text: "Email sehmaluva@gmail.com, use the contact form on this site, or connect via LinkedIn, GitHub, and AWS Builder Community (https://builder.aws.com/community/@sehmaluva).",
       },
     },
     {
       "@type": "Question",
-      name: "What notable projects has Malvin Machingura built?",
+      name: "What notable projects has Malvin built?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Notable projects include Credit Risk Intelligence (explainable ML loan scoring), ScholarProof (privacy-preserving scholarship eligibility on Midnight), Pet Image Classifier (CNN deep learning), ADTC Shona Coding Tutor (offline bilingual LLM mentor with RAG), GitWrapped (GitHub contributions visualization), Student Fest (open-source coding challenges), and his personal portfolio at sehmaluva.me.",
+        text: "Notable work includes Credit Risk Intelligence (explainable ML loan scoring), ScholarProof (privacy-preserving scholarship eligibility on Midnight), Pet Image Classifier (CNN deep learning), ADTC Shona Coding Tutor (offline bilingual LLM mentor with RAG), GitWrapped (GitHub activity visualization), Student Fest (open-source coding challenges), and this portfolio.",
       },
     },
     {
@@ -167,7 +204,7 @@ const faqSchema = {
       name: "What certifications and credentials does Malvin Machingura hold?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Malvin holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026), the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026), and the 2026 Aspire Leaders Program (Aspire Institute, September 2026). He also has Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View certificates at https://sehmaluva.me/#achievements",
+        text: "Malvin holds the Future AWS AI Programmer Nanodegree from Udacity (issued 9 October 2026, verifiable at https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc), covering Python for AI with NumPy, pandas, and Matplotlib, building and training machine learning models, neural networks and generative AI with Transformer networks in PyTorch, and NLP with pre-trained models. He also holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026), the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026), and the 2026 Aspire Leaders Program (Aspire Institute, September 2026). His other credentials include Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View the certificates and verify credentials at https://sehmaluva.codes/#achievements",
       },
     },
     {
@@ -175,7 +212,7 @@ const faqSchema = {
       name: "Has Malvin Machingura published AI research?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Malvin T. Machingura authored AfroJailbreak-ZW: Evaluating Jailbreak Resistance in Shona, a pilot study with Apart Research (June 2026) comparing jailbreak resistance of ChatGPT and Gemini in English, Shona, and Shona-English code-switched prompts. Read it at https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
+        text: "Yes. He authored AfroJailbreak-ZW: Evaluating Jailbreak Resistance in Shona with Apart Research (June 2026) — a pilot study on whether ChatGPT and Gemini are easier to jailbreak in Shona and Shona-English code-switched prompts than in English. Read it at https://apartresearch.com/project/afrojailbreakzw-evaluating-jailbreak-resistance-in-shona-7bmu",
       },
     },
   ],
@@ -276,7 +313,7 @@ const projectsSchema = {
       item: {
         "@type": "SoftwareApplication",
         name: "GitWrapped",
-        url: "https://gitwrapped.sehmaluva.me",
+        url: "https://gitwrapped.sehmaluva.codes",
         applicationCategory: "WebApplication",
         description:
           "GitHub contributions wrapped visualization for yearly activity and highlights.",
