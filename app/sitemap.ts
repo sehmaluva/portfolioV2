@@ -1,39 +1,42 @@
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Use Vercel's system URL if available, otherwise default to your secure www domain
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.sehmaluva.codes'
+
   return [
     {
-      url: 'https://sehmaluva.codes',
+      url: `${baseUrl}`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://sehmaluva.codes/llms.txt',
+      url: `${baseUrl}/llms.txt`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://sehmaluva.codes/Udacity-Future-AWS-AI-Programmer-Nanodegree.pdf',
+      url: `${baseUrl}/Udacity-Future-AWS-AI-Programmer-Nanodegree.pdf`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: 'https://sehmaluva.codes/GCI_Certificate.pdf',
+      url: `${baseUrl}/GCI_Certificate.pdf`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: 'https://sehmaluva.codes/Certificate_Malvin_T._Machingura.pdf',
+      url: `${baseUrl}/Certificate_Malvin_T._Machingura.pdf`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: 'https://sehmaluva.codes/Aspire-Certificate.pdf',
+      url: `${baseUrl}/Aspire-Certificate.pdf`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
