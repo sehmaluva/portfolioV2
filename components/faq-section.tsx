@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "How can I contact or hire Malvin Machingura?",
     answer:
-      "Email sehmaluva@gmail.com, use the contact form on this site, or connect via LinkedIn, GitHub, and AWS Builder Community (https://builder.aws.com/community/@sehmaluva).",
+      "Use the contact form on this site, or connect via LinkedIn, GitHub, and AWS Builder Community (https://builder.aws.com/community/@sehmaluva).",
   },
   {
     question: "What notable projects has Malvin built?",

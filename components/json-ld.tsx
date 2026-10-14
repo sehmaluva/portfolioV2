@@ -14,11 +14,10 @@ const personSchema = {
   additionalName: "Tinotenda",
   familyName: "Machingura",
   url: siteUrl,
-  image: `${siteUrl}/profile.png`,
+  image: `${siteUrl}/profile.jpg`,
   jobTitle: ["Software Engineering Student", "Software Engineer"],
   description:
     "Software Engineering student and remote Software Engineer specializing in full-stack architecture, Artificial Intelligence, and Machine Learning solutions.",
-  email: "mailto:sehmaluva@gmail.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Harare",
@@ -188,7 +187,7 @@ const faqSchema = {
       name: "How can I contact or hire Malvin Machingura?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Email sehmaluva@gmail.com, use the contact form on this site, or connect via LinkedIn, GitHub, and AWS Builder Community (https://builder.aws.com/community/@sehmaluva).",
+        text: "Use the contact form on this site, or connect via LinkedIn, GitHub, and AWS Builder Community (https://builder.aws.com/community/@sehmaluva).",
       },
     },
     {

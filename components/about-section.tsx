@@ -97,7 +97,7 @@ export function AboutSection() {
             className="depth-card overflow-hidden mx-auto lg:mx-0 w-full max-w-[280px]"
           >
             <Image
-              src="/profile.png"
+              src="/profile.jpg"
               alt="Malvin T. Machingura, Software Engineering Student"
               width={280}
               height={280}

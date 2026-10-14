@@ -9,7 +9,7 @@
 - [Skills](https://sehmaluva.codes/#skills): AI & ML, Frontend, Backend, DevOps
 - [Achievements](https://sehmaluva.codes/#achievements): Udacity Future AWS AI Programmer Nanodegree, GCI World (University of Tokyo), Africompilings computational linguistics, Aspire Leaders Program 2026, Credly, Postman, Frontend Masters, Microsoft Learn
 - [Research & Publications](https://sehmaluva.codes/#research): AfroJailbreak-ZW and AI safety work
-- [Contact](https://sehmaluva.codes/#contact): Email and social links
+- [Contact](https://sehmaluva.codes/#contact): Contact form and social links
 - [FAQ](https://sehmaluva.codes/#faq): Common questions about Malvin T. Machingura
 
 ## Identity
@@ -21,7 +21,6 @@
 - Current role: Software Engineer (Remote) at Fincheck Pvt Ltd while studying
 - Previous Fincheck role: Software Engineer Intern (May 2025 — February 2026)
 - Credentials: Udacity Future AWS AI Programmer Nanodegree (October 2026); GCI World 2026 (University of Tokyo); Africa Computational Linguistics Summer School 2026 (Africompilings); Aspire Leaders Program 2026
-- Email: sehmaluva@gmail.com
 - Site: https://sehmaluva.codes
 - GitHub: https://github.com/sehmaluva
 - LinkedIn: https://www.linkedin.com/in/malvin-t-machingura

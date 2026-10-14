@@ -64,7 +64,6 @@ export const metadata: Metadata = {
   creator: "Malvin T. Machingura",
   publisher: "Malvin T. Machingura",
   alternates: { canonical: "/" },
-  icons: { icon: "/icon.svg" },
   openGraph: {
     title: "Malvin T. Machingura (sehmaluva) | Software Engineer",
     description:

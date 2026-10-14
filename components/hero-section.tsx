@@ -70,12 +70,12 @@ export function HeroSection() {
                 icon: Cloud,
                 label: "AWS",
               },
-              { href: "mailto:sehmaluva@gmail.com", icon: Mail, label: "Email" },
+              { href: "#contact", icon: Mail, label: "Contact form" },
             ].map((s) => (
               <a
                 key={s.label}
                 href={s.href}
-                target={s.href.startsWith("mailto") ? undefined : "_blank"}
+                target={s.href.startsWith("#") ? undefined : "_blank"}
                 rel="noopener noreferrer"
                 aria-label={s.label}
                 className="inline-flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground hover:border-primary hover:text-primary transition-colors shadow-sm"

@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { motion } from "framer-motion"
-import { Cloud, Github, Linkedin, Mail, MapPin } from "lucide-react"
+import { Cloud, Github, Linkedin, MapPin } from "lucide-react"
 import { useState } from "react"
 
 type FormStatus = "idle" | "loading" | "success" | "error"
@@ -20,9 +20,7 @@ export function ContactSection() {
     const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
     if (!accessKey || accessKey === "your_access_key_here") {
       setStatus("error")
-      setErrorMessage(
-        "Contact form is not configured yet. Please email sehmaluva@gmail.com instead.",
-      )
+      setErrorMessage("The contact form is temporarily unavailable. Please try again later.")
       return
     }
 
@@ -48,9 +46,7 @@ export function ContactSection() {
     } catch (error) {
       setStatus("error")
       setErrorMessage(
-        error instanceof Error
-          ? error.message
-          : "Something went wrong. Please try again or email me directly.",
+        error instanceof Error ? error.message : "Something went wrong. Please try again.",
       )
     }
   }
@@ -166,15 +162,6 @@ export function ContactSection() {
               <h3 className="font-semibold text-xl mb-4">Elsewhere</h3>
               <div className="space-y-4">
                 <a
-                  href="mailto:sehmaluva@gmail.com"
-                  className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
-                >
-                  <span className="inline-flex size-10 items-center justify-center rounded-full bg-secondary">
-                    <Mail className="h-4 w-4 text-primary" />
-                  </span>
-                  sehmaluva@gmail.com
-                </a>
-                <a
                   href="https://www.linkedin.com/in/malvin-t-machingura"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -212,12 +199,6 @@ export function ContactSection() {
                 className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm hover:bg-secondary"
               >
                 <Github className="h-4 w-4" /> GitHub
-              </a>
-              <a
-                href="mailto:sehmaluva@gmail.com"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm hover:bg-secondary"
-              >
-                <Mail className="h-4 w-4" /> Email
               </a>
             </div>
           </motion.div>
