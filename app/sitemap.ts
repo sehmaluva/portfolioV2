@@ -18,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/POTRAZ-National-CTF-Certificate.pdf`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/Udacity-Future-AWS-AI-Programmer-Nanodegree.pdf`,
       lastModified: new Date(),
       changeFrequency: 'yearly',

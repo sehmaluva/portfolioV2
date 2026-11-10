@@ -14,9 +14,21 @@ type Certificate = {
   image: string
   pdf: string
   verify?: string
+  credentialId?: string
 }
 
 const certificates: Certificate[] = [
+  {
+    title: "POTRAZ National Capture the Flag",
+    issuer: "CTFROOM · POTRAZ",
+    date: "8 November 2026",
+    description:
+      "Certificate of completion for the POTRAZ National CTF on CTFROOM RangeTime — verified proficiency in applied cybersecurity and problem-solving. Credential ID CTFR-EVT-EC7F9302E9.",
+    image: "/POTRAZ-National-CTF-Certificate.png",
+    pdf: "/POTRAZ-National-CTF-Certificate.pdf",
+    verify: "https://app.ctfroom.com/certverify",
+    credentialId: "CTFR-EVT-EC7F9302E9",
+  },
   {
     title: "Future AWS AI Programmer Nanodegree",
     issuer: "Udacity (Part of Accenture)",
@@ -56,6 +68,44 @@ const certificates: Certificate[] = [
     pdf: "/Aspire-Certificate.pdf",
   },
 ]
+
+function VerifyCredential({
+  href,
+  credentialId,
+  className,
+  iconClassName,
+}: {
+  href: string
+  credentialId?: string
+  className: string
+  iconClassName: string
+}) {
+  const [copied, setCopied] = useState(false)
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+      onClick={(e) => {
+        e.stopPropagation()
+        if (!credentialId) return
+        void navigator.clipboard.writeText(credentialId).then(() => {
+          setCopied(true)
+          window.setTimeout(() => setCopied(false), 2500)
+        })
+      }}
+    >
+      <BadgeCheck className={iconClassName} />
+      {copied
+        ? "ID copied — paste it on the form"
+        : credentialId
+          ? `Verify ${credentialId}`
+          : "Verify credential"}
+    </a>
+  )
+}
 
 function CertificateLightbox({
   certificate,
@@ -136,15 +186,12 @@ function CertificateLightbox({
             Download official PDF
           </a>
           {certificate.verify && (
-            <a
+            <VerifyCredential
               href={certificate.verify}
-              target="_blank"
-              rel="noopener noreferrer"
+              credentialId={certificate.credentialId}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium hover:bg-secondary"
-            >
-              <BadgeCheck className="h-4 w-4" />
-              Verify credential
-            </a>
+              iconClassName="h-4 w-4"
+            />
           )}
         </div>
       </div>
@@ -222,16 +269,12 @@ function CertificateCard({
           Official PDF
         </a>
         {certificate.verify && (
-          <a
+          <VerifyCredential
             href={certificate.verify}
-            target="_blank"
-            rel="noopener noreferrer"
+            credentialId={certificate.credentialId}
             className="inline-flex w-fit items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium hover:bg-secondary transition-colors"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <BadgeCheck className="h-3.5 w-3.5" />
-            Verify credential
-          </a>
+            iconClassName="h-3.5 w-3.5"
+          />
         )}
       </div>
     </motion.article>
@@ -255,8 +298,9 @@ export function CertificatesGallery() {
             Certificates &amp; credentials
           </h3>
           <p className="text-muted-foreground mt-2 max-w-2xl">
-            Cloud and applied AI, data science, computational linguistics, and leadership
-            credentials — click a certificate to view it full size and verify it with the issuer.
+            Cybersecurity, cloud and applied AI, data science, computational linguistics,
+            and leadership credentials — click a certificate to view it full size and verify
+            it with the issuer.
           </p>
         </motion.div>
 

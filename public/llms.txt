@@ -7,7 +7,7 @@
 - [Experience](https://sehmaluva.codes/#experience): Fincheck (intern, then part-time), Chitungwiza Municipality, BUSE
 - [Projects](https://sehmaluva.codes/#projects): Credit Risk Intelligence, GitWrapped, Student Fest, and more
 - [Skills](https://sehmaluva.codes/#skills): AI & ML, Frontend, Backend, DevOps
-- [Achievements](https://sehmaluva.codes/#achievements): Udacity Future AWS AI Programmer Nanodegree, GCI World (University of Tokyo), Africompilings computational linguistics, Aspire Leaders Program 2026, Credly, Postman, Frontend Masters, Microsoft Learn
+- [Achievements](https://sehmaluva.codes/#achievements): POTRAZ National Capture the Flag (CTFROOM), Udacity Future AWS AI Programmer Nanodegree, GCI World (University of Tokyo), Africompilings computational linguistics, Aspire Leaders Program 2026, Credly, Postman, Frontend Masters, Microsoft Learn
 - [Research & Publications](https://sehmaluva.codes/#research): AfroJailbreak-ZW and AI safety work
 - [Contact](https://sehmaluva.codes/#contact): Contact form and social links
 - [FAQ](https://sehmaluva.codes/#faq): Common questions about Malvin T. Machingura
@@ -20,7 +20,7 @@
 - Education: Currently pursuing HBSc Software Engineering at Bindura University of Science Education
 - Current role: Software Engineer (Remote) at Fincheck Pvt Ltd while studying
 - Previous Fincheck role: Software Engineer Intern (May 2025 — February 2026)
-- Credentials: Udacity Future AWS AI Programmer Nanodegree (October 2026); GCI World 2026 (University of Tokyo); Africa Computational Linguistics Summer School 2026 (Africompilings); Aspire Leaders Program 2026
+- Credentials: POTRAZ National Capture the Flag (CTFROOM, November 2026); Udacity Future AWS AI Programmer Nanodegree (October 2026); GCI World 2026 (University of Tokyo); Africa Computational Linguistics Summer School 2026 (Africompilings); Aspire Leaders Program 2026
 - Site: https://sehmaluva.codes
 - GitHub: https://github.com/sehmaluva
 - LinkedIn: https://www.linkedin.com/in/malvin-t-machingura
@@ -29,6 +29,10 @@
 
 ## Certifications & credentials
 
+- POTRAZ National Capture the Flag Competition — CTFROOM, conducted for POTRAZ on RangeTime. Certificate of completion awarded 8 November 2026 for verified proficiency in applied cybersecurity and problem-solving. Credential ID CTFR-EVT-EC7F9302E9.
+  - Certificate: https://sehmaluva.codes/POTRAZ-National-CTF-Certificate.pdf
+  - Preview: https://sehmaluva.codes/POTRAZ-National-CTF-Certificate.png
+  - Verify: https://app.ctfroom.com/certverify — enter credential ID CTFR-EVT-EC7F9302E9
 - Future AWS AI Programmer Nanodegree — Udacity (Part of Accenture). Verified Nanodegree program completion. Awarded 9 October 2026. Covers Python programming for AI with NumPy, pandas, and Matplotlib for data analysis and visualization; building and training machine learning models with popular Python libraries; implementing neural networks in PyTorch; hands-on deep learning projects; and generative AI with Transformer neural networks — building, training, and deploying them with PyTorch and leveraging pre-trained models for natural language processing. Designed for individuals with basic programming experience, it prepares learners for advanced study in AI and machine learning and for a career in AI programming.
   - Certificate: https://sehmaluva.codes/Udacity-Future-AWS-AI-Programmer-Nanodegree.pdf
   - Preview: https://sehmaluva.codes/Udacity-Future-AWS-AI-Programmer-Nanodegree.png
@@ -47,7 +51,7 @@
 
 ## Expertise
 
-- Artificial Intelligence, Machine Learning, Deep Learning, Data Science, LLMs & GenAI, NLP, Computational Linguistics, AI Safety
+- Artificial Intelligence, Machine Learning, Deep Learning, Data Science, Cybersecurity, LLMs & GenAI, NLP, Computational Linguistics, AI Safety
 - PyTorch, NumPy, pandas, Matplotlib, Generative AI, Transformer Neural Networks, Amazon Web Services (AWS), Cloud Computing, Applied AI programming
 - AI Safety, jailbreak evaluation, low-resource languages (Shona)
 - Python, C++, Rust, Java, TypeScript, JavaScript

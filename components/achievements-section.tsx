@@ -131,7 +131,8 @@ export function AchievementsSection() {
 
       <div className="pl-6 md:pl-[max(1.5rem,calc((100vw-72rem)/2+1.5rem))]">
         <p className="container mx-auto max-w-6xl px-0 pr-6 mb-4 text-sm text-muted-foreground">
-          Udacity Future AWS AI Programmer Nanodegree. Credly: Python Essentials 1 (Cisco),
+          POTRAZ National Capture the Flag (CTFROOM). Udacity Future AWS AI Programmer
+          Nanodegree. Credly: Python Essentials 1 (Cisco),
           Introduction to Cybersecurity (Cisco), MongoDB Indexing &amp; Aggregation. Also Postman,
           Udacity AWS AI Practitioner, Frontend Masters React v9, Microsoft Learn.
         </p>

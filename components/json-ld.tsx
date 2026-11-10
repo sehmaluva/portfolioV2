@@ -38,6 +38,8 @@ const personSchema = {
     "Deep Learning",
     "Data Science",
     "Computational Linguistics",
+    "Cybersecurity",
+    "Capture the Flag",
     "LLMs & GenAI",
     "NLP",
     "AI Safety",
@@ -63,6 +65,22 @@ const personSchema = {
     "Docker",
   ],
   hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      name: "POTRAZ National Capture the Flag Competition",
+      description:
+        "Certificate of completion for the POTRAZ National Capture the Flag Competition, a CTF conducted on CTFROOM RangeTime. Reflects verified proficiency in applied cybersecurity and problem-solving. Credential ID CTFR-EVT-EC7F9302E9.",
+      credentialCategory: "certificate",
+      dateCreated: "2026-11-08",
+      identifier: "CTFR-EVT-EC7F9302E9",
+      competencyRequired: ["Applied Cybersecurity", "Problem Solving"],
+      recognizedBy: {
+        "@type": "Organization",
+        name: "CTFROOM",
+        url: "https://app.ctfroom.com",
+      },
+      url: `${siteUrl}/POTRAZ-National-CTF-Certificate.pdf`,
+    },
     {
       "@type": "EducationalOccupationalCredential",
       name: "Future AWS AI Programmer Nanodegree",
@@ -203,7 +221,7 @@ const faqSchema = {
       name: "What certifications and credentials does Malvin Machingura hold?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Malvin holds the Future AWS AI Programmer Nanodegree from Udacity (issued 9 October 2026, verifiable at https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc), covering Python for AI with NumPy, pandas, and Matplotlib, building and training machine learning models, neural networks and generative AI with Transformer networks in PyTorch, and NLP with pre-trained models. He also holds GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026), the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026), and the 2026 Aspire Leaders Program (Aspire Institute, September 2026). His other credentials include Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View the certificates and verify credentials at https://sehmaluva.codes/#achievements",
+        text: "Malvin holds the Future AWS AI Programmer Nanodegree from Udacity (issued 9 October 2026, verifiable at https://www.udacity.com/certificate/e/cce5c3c6-900d-11f1-ad5b-2b2ccce473dc), covering Python for AI with NumPy, pandas, and Matplotlib, building and training machine learning models, neural networks and generative AI with Transformer networks in PyTorch, and NLP with pre-trained models. He also holds the POTRAZ National Capture the Flag certificate from CTFROOM (completed 8 November 2026; credential ID CTFR-EVT-EC7F9302E9, verify at https://app.ctfroom.com/certverify by entering credential ID CTFR-EVT-EC7F9302E9), GCI World April 2026 (data science, University of Tokyo — Matsuo-Iwasawa Laboratory, issued August 2026), the Africa Computational Linguistics Summer School certificate from Africompilings / Linguistics Island (August 2026), and the 2026 Aspire Leaders Program (Aspire Institute, September 2026). His other credentials include Credly badges (Python Essentials 1, Introduction to Cybersecurity, MongoDB Indexing & Aggregation), Postman Student Expert, Udacity AWS AI Practitioner Challenge, Frontend Masters Complete Intro to React v9, and a Microsoft Learn credential. View the certificates and verify credentials at https://sehmaluva.codes/#achievements",
       },
     },
     {
